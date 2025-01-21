@@ -1278,137 +1278,800 @@ let KidsFashion = [
     size: "M",
   },
 ];
-let Beauty = [
+let Fitness = [
   {
     id: 1,
     name: "",
     image: "",
     price: 99,
-   
   },
   {
     id: 2,
-    name: "Cap",
+    name: "",
     image: "",
     price: 80,
     size: "L",
   },
   {
     id: 3,
-    name: "Denim",
-    image:
-      "",
+    name: "",
+    image: "",
     price: 70,
-  
   },
   {
     id: 4,
-    name: "Jacket",
-    image:
-      "",
+    name: "",
+    image: "",
     price: 69,
-  
   },
   {
     id: 17,
-    name: "Boys Jacket",
-    image:
-      "",
+    name: "",
+    image: "",
     price: 59,
-  
   },
   {
     id: 5,
-    name: "T-shirt",
+    name: "",
     image: "",
     price: 49,
-   
   },
   {
     id: 6,
-    name: "Loose Fit Jeans",
-    image:
-      "",
+    name: "",
+    image: "",
     price: 45,
-    
   },
   {
     id: 7,
-    name: "Loose Fit Shirt",
+    name: "",
     image: "",
     price: 39,
- 
   },
   {
     id: 8,
-    name: "Cargo",
-    image:
-      "",
+    name: "",
+    image: "",
     price: 55,
-  
   },
   {
     id: 9,
-    name: "Jogger",
-    image:
-      "",
+    name: "",
+    image: "",
     price: 30,
-   
   },
   {
     id: 10,
-    name: "Black Jeans",
+    name: "",
     image: "",
     price: 64,
-  
   },
   {
     id: 11,
-    name: "Kurta",
-    image:
-      "",
+    name: "",
+    image: "",
     price: 102,
-
   },
   {
     id: 12,
-    name: "SweatShirt",
-    image:
-      "",
+    name: "",
+    image: "",
     price: 61,
-   
   },
   {
     id: 13,
-    name: "Hoddie",
-    image:
-      "",
+    name: "",
+    image: "",
     price: 13,
-   
   },
   {
     id: 14,
-    name: "Dark Blue Shirt",
-    image:
-      "",
+    name: "",
+    image: "",
     price: 29,
-   
   },
   {
     id: 15,
-    name: "White Shirt",
+    name: "",
     image: "",
     price: 23,
-  
   },
   {
     id: 16,
-    name: "Black Shirt",
+    name: "",
     image: "",
     price: 75,
-   
   },
 ];
+let HomeKitchen = [
+  {
+    id: 1,
+    name: "",
+    image: "",
+    price: 99,
+  },
+  {
+    id: 2,
+    name: "",
+    image: "",
+    price: 80,
+    size: "L",
+  },
+  {
+    id: 3,
+    name: "",
+    image: "",
+    price: 70,
+  },
+  {
+    id: 4,
+    name: "",
+    image: "",
+    price: 69,
+  },
+  {
+    id: 17,
+    name: "",
+    image: "",
+    price: 59,
+  },
+  {
+    id: 5,
+    name: "",
+    image: "",
+    price: 49,
+  },
+  {
+    id: 6,
+    name: "",
+    image: "",
+    price: 45,
+  },
+  {
+    id: 7,
+    name: "",
+    image: "",
+    price: 39,
+  },
+  {
+    id: 8,
+    name: "",
+    image: "",
+    price: 55,
+  },
+  {
+    id: 9,
+    name: "",
+    image: "",
+    price: 30,
+  },
+  {
+    id: 10,
+    name: "",
+    image: "",
+    price: 64,
+  },
+  {
+    id: 11,
+    name: "",
+    image: "",
+    price: 102,
+  },
+  {
+    id: 12,
+    name: "",
+    image: "",
+    price: 61,
+  },
+  {
+    id: 13,
+    name: "",
+    image: "",
+    price: 13,
+  },
+  {
+    id: 14,
+    name: "",
+    image: "",
+    price: 29,
+  },
+  {
+    id: 15,
+    name: "",
+    image: "",
+    price: 23,
+  },
+  {
+    id: 16,
+    name: "",
+    image: "",
+    price: 75,
+  },
+];
+let Stationary = [
+  {
+    id: 1,
+    name: "",
+    image: "",
+    price: 99,
+  },
+  {
+    id: 2,
+    name: "",
+    image: "",
+    price: 80,
+    size: "L",
+  },
+  {
+    id: 3,
+    name: "",
+    image: "",
+    price: 70,
+  },
+  {
+    id: 4,
+    name: "",
+    image: "",
+    price: 69,
+  },
+  {
+    id: 17,
+    name: "",
+    image: "",
+    price: 59,
+  },
+  {
+    id: 5,
+    name: "",
+    image: "",
+    price: 49,
+  },
+  {
+    id: 6,
+    name: "",
+    image: "",
+    price: 45,
+  },
+  {
+    id: 7,
+    name: "",
+    image: "",
+    price: 39,
+  },
+  {
+    id: 8,
+    name: "",
+    image: "",
+    price: 55,
+  },
+  {
+    id: 9,
+    name: "",
+    image: "",
+    price: 30,
+  },
+  {
+    id: 10,
+    name: "",
+    image: "",
+    price: 64,
+  },
+  {
+    id: 11,
+    name: "",
+    image: "",
+    price: 102,
+  },
+  {
+    id: 12,
+    name: "",
+    image: "",
+    price: 61,
+  },
+  {
+    id: 13,
+    name: "",
+    image: "",
+    price: 13,
+  },
+  {
+    id: 14,
+    name: "",
+    image: "",
+    price: 29,
+  },
+  {
+    id: 15,
+    name: "",
+    image: "",
+    price: 23,
+  },
+  {
+    id: 16,
+    name: "",
+    image: "",
+    price: 75,
+  },
+];
+let Books = [
+  {
+    id: 1,
+    name: "",
+    image: "",
+    price: 99,
+  },
+  {
+    id: 2,
+    name: "",
+    image: "",
+    price: 80,
+    size: "L",
+  },
+  {
+    id: 3,
+    name: "",
+    image: "",
+    price: 70,
+  },
+  {
+    id: 4,
+    name: "",
+    image: "",
+    price: 69,
+  },
+  {
+    id: 17,
+    name: "",
+    image: "",
+    price: 59,
+  },
+  {
+    id: 5,
+    name: "",
+    image: "",
+    price: 49,
+  },
+  {
+    id: 6,
+    name: "",
+    image: "",
+    price: 45,
+  },
+  {
+    id: 7,
+    name: "",
+    image: "",
+    price: 39,
+  },
+  {
+    id: 8,
+    name: "",
+    image: "",
+    price: 55,
+  },
+  {
+    id: 9,
+    name: "",
+    image: "",
+    price: 30,
+  },
+  {
+    id: 10,
+    name: "",
+    image: "",
+    price: 64,
+  },
+  {
+    id: 11,
+    name: "",
+    image: "",
+    price: 102,
+  },
+  {
+    id: 12,
+    name: "",
+    image: "",
+    price: 61,
+  },
+  {
+    id: 13,
+    name: "",
+    image: "",
+    price: 13,
+  },
+  {
+    id: 14,
+    name: "",
+    image: "",
+    price: 29,
+  },
+  {
+    id: 15,
+    name: "",
+    image: "",
+    price: 23,
+  },
+  {
+    id: 16,
+    name: "",
+    image: "",
+    price: 75,
+  },
+];
+let Toys = [
+  {
+    id: 1,
+    name: "",
+    image: "",
+    price: 99,
+  },
+  {
+    id: 2,
+    name: "",
+    image: "",
+    price: 80,
+    size: "L",
+  },
+  {
+    id: 3,
+    name: "",
+    image: "",
+    price: 70,
+  },
+  {
+    id: 4,
+    name: "",
+    image: "",
+    price: 69,
+  },
+  {
+    id: 17,
+    name: "",
+    image: "",
+    price: 59,
+  },
+  {
+    id: 5,
+    name: "",
+    image: "",
+    price: 49,
+  },
+  {
+    id: 6,
+    name: "",
+    image: "",
+    price: 45,
+  },
+  {
+    id: 7,
+    name: "",
+    image: "",
+    price: 39,
+  },
+  {
+    id: 8,
+    name: "",
+    image: "",
+    price: 55,
+  },
+  {
+    id: 9,
+    name: "",
+    image: "",
+    price: 30,
+  },
+  {
+    id: 10,
+    name: "",
+    image: "",
+    price: 64,
+  },
+  {
+    id: 11,
+    name: "",
+    image: "",
+    price: 102,
+  },
+  {
+    id: 12,
+    name: "",
+    image: "",
+    price: 61,
+  },
+  {
+    id: 13,
+    name: "",
+    image: "",
+    price: 13,
+  },
+  {
+    id: 14,
+    name: "",
+    image: "",
+    price: 29,
+  },
+  {
+    id: 15,
+    name: "",
+    image: "",
+    price: 23,
+  },
+  {
+    id: 16,
+    name: "",
+    image: "",
+    price: 75,
+  },
+];
+const beautyAndCare = {
+  hairCare: [
+    {
+      id: 1,
+      name: "Shampoo",
+      description: "Cleanses and nourishes hair.",
+      price: 10,
+      image:
+        "https://orchidlifesciences.com/wp-content/uploads/2024/06/01-22_-01-1024x704.jpg",
+    },
+    {
+      id: 2,
+      name: "Conditioner",
+      description: "Softens and moisturizes hair.",
+      price: 14,
+      image:
+        "https://5.imimg.com/data5/SELLER/Default/2023/5/306033332/WN/CY/GZ/90725602/hair-care-products.jpg",
+    },
+    {
+      id: 3,
+      name: "Hair Oil",
+      description: "Promotes hair growth and shine.",
+      price: 20,
+      image:
+        "https://www.vilvahstore.com/cdn/shop/articles/d23265de0513497608026447779ab962.jpg?v=1688116642&width=1500",
+    },
+    {
+      id: 4,
+      name: "Antihairfall Serum",
+      description: "Cleanses and nourishes hair.",
+      price: 16,
+      image:
+        "https://www.hcpwellness.in/wp-content/uploads/2024/02/haircare.jpg",
+    },
+    {
+      id: 5,
+      name: "Conditioner",
+      description: "Softens and moisturizes hair.",
+      price: 15,
+      image:
+        "https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/rockcms/2024-06/240610-beauty-awards-2024-hair-care-winners-kb-sociall-68fe8d.jpg",
+    },
+    {
+      id: 6,
+      name: "Hair Oil",
+      description: "Promotes hair growth and shine.",
+      price: 17,
+      image:
+        "https://images-static.naikaa.com/beauty-blog/wp-content/uploads/2023/01/Explore-The-Goodness-Of-Nature-With-These-Natural-Hair-Care-Brands_bb335.jpg",
+    },
+    {
+      id: 7,
+      name: "Shampoo",
+      description: "Cleanses and nourishes hair.",
+      price: 18,
+      image:
+        "https://cdn11.bigcommerce.com/s-63354/images/stencil/original/image-manager/haircare-top-brands-1-.png?t=1711726947",
+    },
+    {
+      id: 8,
+      name: "Conditioner",
+      description: "Softens and moisturizes hair.",
+      price: 13,
+      image:
+        "https://hips.hearstapps.com/hmg-prod/images/gh-012021-best-hair-products-1642523366.png?crop=0.502xw:1.00xh;0.250xw,0&resize=1200:*",
+    },
+    {
+      id: 9,
+      name: "Hair Oil",
+      description: "Promotes hair growth and shine.",
+      price: 19,
+      image:
+        "https://aromamagic.com/cdn/shop/products/dry-damage.jpg?v=1610107147",
+    },
+    {
+      id: 10,
+      name: "Shampoo",
+      description: "Cleanses and nourishes hair.",
+      price: 11,
+      image:
+        "https://static.vecteezy.com/system/resources/thumbnails/052/301/208/small_2x/discover-and-explore-an-extensive-array-of-organic-hair-care-products-and-essential-tools-that-are-perfect-for-achieving-a-professional-salonquality-finish-from-the-comfort-of-your-own-home-photo.jpg",
+    },
+    {
+      id: 11,
+      name: "Conditioner",
+      description: "Softens and moisturizes hair.",
+      price: 29,
+      image:
+        "https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2024-10/Top%209%20Hair%20Care%20Brands%20in%20India%20For%20Men%20and%20Women%20%281%29.jpg",
+    },
+    {
+      id: 12,
+      name: "Hair Oil",
+      description: "Promotes hair growth and shine.",
+      price: 30,
+      image:
+        "https://nypost.com/wp-content/uploads/sites/2/2023/05/haircare-under-25-1.jpg?quality=75&strip=all",
+    },
+    {
+      id: 13,
+      name: "Shampoo",
+      description: "Cleanses and nourishes hair.",
+      price: 21,
+      image:
+        "https://img.freepik.com/free-photo/top-view-toilet-bag-table_23-2149879949.jpg?semt=ais_incoming",
+    },
+    {
+      id: 14,
+      name: "Conditioner",
+      description: "Softens and moisturizes hair.",
+      price: 19,
+      image:
+        "https://t4.ftcdn.net/jpg/03/59/35/47/360_F_359354700_9witgG0yfrLJM97jxfVqaf40vJAk4xr4.jpg",
+    },
+    {
+      id: 15,
+      name: "Hair Oil",
+      description: "Promotes hair growth and shine.",
+      price: 18,
+      image:
+        "https://images.unsplash.com/photo-1712112797786-d43620cac1fd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGFpciUyMHByb2R1Y3R8ZW58MHx8MHx8fDA%3D",
+    },
+  ],
+  skinCare: [
+    {
+      id: 1,
+      name: "Moisturizer",
+      description: "Hydrates and smoothens skin.",
+      price: 19,
+      image:
+        "https://typsybeauty.com/cdn/shop/articles/types_of_skin_care_products.jpg?v=1723619039",
+    },
+    {
+      id: 2,
+      name: "Sunscreen",
+      description: "Protects skin from UV rays.",
+      price: 15,
+      image:
+        "https://theloveco.in/cdn/shop/articles/10-must-have-luxury-body-care-products-the-love-co.jpg?v=1729317123",
+    },
+    {
+      id: 3,
+      name: "Face Wash",
+      description: "Removes dirt and impurities.",
+      price: 12,
+      image:
+        "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2024-06/240610-beauty-awards-2024-skincare-winners-vl-social-91be20.jpg",
+    },
+    {
+      id: 4,
+      name: "Moisturizer",
+      description: "Hydrates and smoothens skin.",
+      price: 14,
+      image:
+        "https://hips.hearstapps.com/hmg-prod/images/gh-best-skincare-products-6557978b58b57.png?crop=0.888888888888889xw:1xh;center,top&resize=1200:*",
+    },
+    {
+      id: 5,
+      name: "Sunscreen",
+      description: "Protects skin from UV rays.",
+      price: 18,
+      image:
+        "https://www.vilvahstore.com/cdn/shop/articles/Choose_Natural_Skin_Care_Products.jpg?v=1721716430&width=2048",
+    },
+    {
+      id: 6,
+      name: "Face Wash",
+      description: "Removes dirt and impurities.",
+      price: 20,
+      image:
+        "https://orchidlifesciences.com/wp-content/uploads/2024/06/01-14-01-1024x704.jpg",
+    },
+    {
+      id: 7,
+      name: "Moisturizer",
+      description: "Hydrates and smoothens skin.",
+      price: 16,
+      image:
+        "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1024-512,f_auto,q_auto:best/rockcms/2024-01/240117-staff-skin-care-routines-social-2c85d8.jpg",
+    },
+    {
+      id: 8,
+      name: "Sunscreen",
+      description: "Protects skin from UV rays.",
+      price: 17,
+      image:
+        "https://www.bodytales.in/cdn/shop/products/Combo-5-Hydtrating-_Glowing-Skin-Care-Combo_Post.jpg?v=1678090122",
+    },
+    {
+      id: 9,
+      name: "Face Wash",
+      description: "Removes dirt and impurities.",
+      price: 29,
+      image:
+        "https://cdn.shopify.com/s/files/1/0070/7032/files/how-to-start-a-skincare-line-glow-oasis.jpg?v=1666895341",
+    },
+    {
+      id: 10,
+      name: "Moisturizer",
+      description: "Hydrates and smoothens skin.",
+      price: 29,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0F2IzkX_Lf1xxoZnJblbGpv7sNVxvDM_E7Q&s",
+    },
+    {
+      id: 11,
+      name: "Sunscreen",
+      description: "Protects skin from UV rays.",
+      price: 24,
+      image:
+        "https://hips.hearstapps.com/hmg-prod/images/2-natural-skincare-brands-670eadb4e4fcf.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=1120:*",
+    },
+    {
+      id: 12,
+      name: "Face Wash",
+      description: "Removes dirt and impurities.",
+      price: 22,
+      image:
+        "https://www.ubuy.co.in/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaW4vNjVmNTBkNjk1ZmExMDkwYjVjNDEzNGM3LXNraW4tY2FyZS1wcm9kdWN0cy1zZXQtZ3JlZW4tdGVhLXNraW4uanBn.jpg",
+    },
+    {
+      id: 13,
+      name: "Moisturizer",
+      description: "Hydrates and smoothens skin.",
+      price: 21,
+      image: "https://m.media-amazon.com/images/I/61xtviA5U4L.jpg",
+    },
+    {
+      id: 14,
+      name: "Sunscreen",
+      description: "Protects skin from UV rays.",
+      price: 31,
+      image: "https://i.ytimg.com/vi/Twgc0ORBdDQ/maxresdefault.jpg",
+    },
+    {
+      id: 15,
+      name: "Face Wash",
+      description: "Removes dirt and impurities.",
+      price: 32,
+      image:
+        "https://www.skincenterofsouthmiami.com/wp-content/uploads/2018/06/Skin-Center-of-South-Miami-Facials-and-Skin-Care.jpg",
+    },
+  ],
+};
+
+// Routes
+app.get("/api/beauty-and-care", (req, res) => {
+  res.json(beautyAndCare);
+});
+
+app.get("/api/beauty-and-care/hair-care", (req, res) => {
+  res.json(beautyAndCare.hairCare);
+});
+
+app.get("/api/beauty-and-care/skin-care", (req, res) => {
+  res.json(beautyAndCare.skinCare);
+});
+
+app.get("/api/beauty-and-care/:category/:id", (req, res) => {
+  const { category, id } = req.params;
+  const item = beautyAndCare[category]?.find(
+    (item) => item.id === parseInt(id)
+  );
+  if (item) {
+    res.json(item);
+  } else {
+    res.status(404).json({ error: "Item not found" });
+  }
+});
 
 // clothing API
 app.get("/fashion", (req, res) => {
