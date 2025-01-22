@@ -2047,6 +2047,401 @@ const beautyAndCare = {
     },
   ],
 };
+const Electronics = {
+ TVs : [
+    {
+      id: 1,
+      name: "Sony Bravia Next Gen Tv",
+      description: "Great Dolby Vision and HDR",
+      price: 100,
+      image:
+        "https://m.media-amazon.com/images/I/8159EvuNJaL._AC_UF1000,1000_QL80_.jpg",
+    },
+    {
+      id: 2,
+      name: "LG Nanocell",
+      description: "Best 4K TV",
+      price: 140,
+      image:
+        "https://www.lg.com/content/dam/channel/wcms/in/images/tvs/55qned88t6a-atr-eail-in-c/gallery/55QNED88T6A-DZ-03.jpg/_jcr_content/renditions/thum-1600x1062.jpeg",
+    },
+    {
+      id: 3,
+      name: "Haier TV",
+      description: "Great value With great features",
+      price: 200,
+      image:
+        "https://cdn.mos.cms.futurecdn.net/LMav3AW8YLsTQg5Ucz7U85-1200-80.jpg",
+    },
+    {
+      id: 4,
+      name: "REDMI Tv",
+      description: "Smart TV with great features",
+      price: 160,
+      image:
+        "https://vdaadmin.venusdigitalarcade.in/media/catalog/product/cache/a4aa45628d61667009e8bfd73fcc061b/1/7/17_14_58.jpg",
+    },
+    {
+      id: 5,
+      name: "LG QNED",
+      description: "Smart TV with Bezel-Free Design",
+      price: 150,
+      image:
+        "https://5.imimg.com/data5/SELLER/Default/2024/12/475493328/WU/UC/OZ/46183170/55-inch-sony-led-tv.jpeg",
+    },
+    {
+      id: 6,
+      name: "Aiwa OLED",
+      description: "1 Billion Color Combination",
+      price: 170,
+      image:
+        "https://static.toiimg.com/thumb/msid-99244997,imgsize-657260,width-400,resizemode-4/99244997.jpg",
+    },
+    {
+      id: 7,
+      name: "MI Tv",
+      description: "Segment Biggest Screen",
+      price: 180,
+      image:
+        "https://cdn.mos.cms.futurecdn.net/XMgVXWexgLztHWXmktXgPJ.jpg",
+    },
+    {
+      id: 8,
+      name: "Realme Techlife",
+      description: "Android TV with great features",
+      price: 130,
+      image:
+        "https://i.gadgets360cdn.com/products/televisions/large/1548153588_832_lg_55-inch-led-full-hd-tv-55la9700.jpg",
+    },
+    {
+      id: 9,
+      name: "Xiaomi TV",
+      description: "LED smart TV with Google Connectivity",
+      price: 109,
+      image:
+        "https://i.rtings.com/assets/products/bcKbP8uc/sony-x85k/design-medium.jpg?format=auto",
+    },
+    {
+      id: 10,
+      name: "Motorola Invision",
+      description: "4k crystal Vision",
+      price: 110,
+      image:
+        "https://rukminim2.flixcart.com/image/850/1000/xif0q/television/p/n/y/-original-imagxyxzyvweg64x.jpeg?q=90&crop=false",
+    },
+    {
+      id: 11,
+      name: "Sony Bravia",
+      description: "With Dolby sound System",
+      price: 290,
+      image:
+        "https://cdn.mos.cms.futurecdn.net/w7xUMcWX7BMUMzayo4SzYE-1200-80.jpg",
+    },
+    {
+      id: 12,
+      name: "Acer TV",
+      description: "Smart WebOs TV",
+      price: 300,
+      image:
+        "https://static.langimg.com/thumb/110895065/navbharat-times-110895065.jpg?width=540&resizemode=3",
+    },
+    {
+      id: 13,
+      name: "LG TV",
+      description: "OLED Screen with 4K Resolution",
+      price: 219,
+      image:
+        "https://www.hindustantimes.com/ht-img/img/2024/10/04/550x309/Best_4K_TV_1728035464483_1728035465095.jpeg",
+    },
+    {
+      id: 14,
+      name: "Samsung TV",
+      description: "OLED Screen with 8K Resolution",
+      price: 199,
+      image:
+        "https://m.media-amazon.com/images/I/51dPiXWFboL._SL500_.jpg",
+    },
+    {
+      id: 15,
+      name: "Sony Premium",
+      description: "4k Google TV With REGZA Power Audio",
+      price: 189,
+      image:
+        "https://www.digitaltrends.com/wp-content/uploads/2024/07/Sony-Bravia-9-Review-26.jpg?p=1",
+    },
+  ],
+  Refrigerator : [
+    {
+      id: 1,
+      name: "LG",
+      description: "Comes with Inbuilt Stabliser",
+      price: 100,
+      image:
+        "https://c.ndtvimg.com/2020-08/hq3r6of8_refrigerator_625x300_19_August_20.jpg",
+    },
+    {
+      id: 2,
+      name: "Samsung",
+      description: "Best In all Condition",
+      price: 140,
+      image:
+        "https://hips.hearstapps.com/hmg-prod/images/best-fridges-673bac80a584c.png?crop=0.502xw:1.00xh;0.250xw,0&resize=1200:*",
+    },
+    {
+      id: 3,
+      name: "Haier",
+      description: "Top Selling Refrigarator",
+      price: 200,
+      image:
+        "https://media.istockphoto.com/id/842160124/photo/refrigerator-with-fruits-and-vegetables.jpg?s=612x612&w=0&k=20&c=j0W4TPOevBpp3mS6_X2FHV1uWVl3fcfdGAt2X3l8XzE=",
+    },
+    {
+      id: 4,
+      name: "Whirpool",
+      description: "Nice Looking and Compact design",
+      price: 160,
+      image:
+        "https://static.toiimg.com/thumb/msid-80010563,width-1070,height-580,imgsize-229684,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+    },
+    {
+      id: 5,
+      name: "Panasonic",
+      description: "Segment Most Affordable",
+      price: 150,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZ6IH_8eyHigEi2UFtcqNfs12Dc83Uci5AQ&s",
+    },
+    {
+      id: 6,
+      name: "Samsung 653l",
+      description: "Side by Side door Refrigarator",
+      price: 170,
+      image:
+        "https://www.lg.com/content/dam/channel/wcms/in/magazine/wish-to-get-the-best-refrigerator-for-your-home-look-out-for-these-four-features/blog-01v1.jpg",
+    },
+    {
+      id: 7,
+      name: "LG 655l",
+      description: "401l Frost Free Double Door",
+      price: 180,
+      image:
+        "https://www.whirlpool.com/is/image/content/dam/business-unit/whirlpoolv2/en-us/marketing-content/site-assets/page-content/oc-articles/types-of-refrigerators/types-of-refrigerators_Mobile_2.jpg?fmt=png-alpha&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&scl=1&constrain=fit,1",
+    },
+    {
+      id: 8,
+      name: "Haier wifi",
+      description: "Frost Free And Convertible",
+      price: 130,
+      image:
+        "https://kitchenaid-h.assetsadobe.com/is/image/content/dam/global/whirlpool/refrigeration/freestanding-refrigerator/images/hero-WRB322DMHV.tif?&fmt=png-alpha&resMode=sharp2&wid=850&hei=850",
+    },
+    {
+      id: 9,
+      name: "Llyod",
+      description: "Comes With 180l capacity",
+      price: 109,
+      image:
+        "https://images.livemint.com/img/2024/08/02/600x338/refrigerator_1722596788297_1722596805972.png",
+    },
+    {
+      id: 10,
+      name: "Toshiba",
+      description: "Frost Free Double Door",
+      price: 110,
+      image:
+        "https://www.whirlpool.com/is/image/content/dam/business-unit/whirlpoolv2/en-us/marketing-content/site-assets/page-content/oc-articles/types-of-refrigerators/types-of-refrigerators_Thumbnail.jpg?wid=1200&fmt=webp",
+    },
+    {
+      id: 11,
+      name: "Voltas",
+      description: "Direct cooling System ",
+      price: 290,
+      image:
+        "https://img.etimg.com/thumb/width-420,height-315,imgsize-116140,resizemode-75,msid-110999283/top-trending-products/news/12-best-selling-refrigerators-in-india-june-2024/refrigerator.jpg",
+    },
+    {
+      id: 12,
+      name: "IFB",
+      description: "5 Star Double Door",
+      price: 300,
+      image:
+        "https://www.hindustantimes.com/ht-img/img/2023/09/18/550x309/hgjngh_1695038166488_1695038178583.jpg",
+    },
+    {
+      id: 13,
+      name: "BOSCH",
+      description: "Convertible in Nature ",
+      price: 219,
+      image:
+        "https://www.lg.com/content/dam/channel/wcms/in/magazine/frost-free-fridge-freezer/frost-free-fridge-freezer-02.jpg",
+    },
+    {
+      id: 14,
+      name: "Hisense",
+      description: "Comes With Dual Freezer",
+      price: 199,
+      image:
+        "https://www.hindustantimes.com/ht-img/img/2023/12/04/1600x900/fridge_1701672459244_1701672459623.jpg",
+    },
+    {
+      id: 15,
+      name: "MarQ",
+      description: "Great Cooling In Segment ",
+      price: 189,
+      image:
+        "https://i2.wp.com/techau.com.au/wp-content/uploads/2019/03/Fridge-black.jpg?fit=893%2C606&ssl=1",
+    },
+  ],
+  WashingMachine : [
+    {
+      id: 1,
+      name: "LG",
+      description: "Consider the types of wash cycles available, such as fast spin cycles",
+      price: 100,
+      image:
+        "https://static.toiimg.com/thumb/msid-109640969,imgsize-42852,width-400,resizemode-4/109640969.jpg",
+    },
+    {
+      id: 2,
+      name: "Samsung",
+      description: "adjustable temperatures, and steam and sanitize cycles",
+      price: 140,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE3J1GA2kQuYBSRb5uURLMF_kapCfkXhOYzg&s",
+    },
+    {
+      id: 3,
+      name: "Whirpool",
+      description: "Front load washing machines are more energy efficient than older models, using less water and electricity",
+      price: 200,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv6he1SVEdkTza_HAizfJYZDPSeVVKct5hGQ&s",
+    },
+    {
+      id: 4,
+      name: "IFB",
+      description: " Consider the material of the drum ",
+      price: 160,
+      image:
+        "https://media3.bsh-group.com/Product_Shots/5120x/19753969_WGG04409GB_STP_def.webp",
+    },
+    {
+      id: 5,
+      name: "Godrej",
+      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 150,
+      image:
+        "https://img.etimg.com/thumb/width-1200,height-900,imgsize-43118,resizemode-75,msid-116993427/top-trending-products/major-appliances/washing-machine/best-godrej-washing-machine-in-india-for-fresh-clean-laundry.jpg",
+    },
+    {
+      id: 6,
+      name: "BOSCH",
+      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 170,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4MgLjT0gAwH7xZJvZMSEDrqTMtKZ9cO77pA&s",
+    },
+    {
+      id: 7,
+      name: "Toshiba",
+      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 180,
+      image:
+        "https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2024/01/Washing-Machine-1024x512.jpg",
+    },
+    {
+      id: 8,
+      name: "Haier",
+      description: "Front load washing machines are more energy efficient than older models, using less water and electricity",
+      price: 130,
+      image:
+        "https://www.livemint.com/lm-img/img/2024/08/16/1600x900/washing_machine_1723800674554_1723800688433.png",
+    },
+    {
+      id: 9,
+      name: "ElectroLux",
+      description: " Consider the material of the drum ",
+      price: 109,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSA_UdXpfHVor4MqGceSl3_Io1byyHc0qUpw&s",
+    },
+    {
+      id: 10,
+      name: "Croma",
+      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 110,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa0Ne2CZmDEoWtZDJLEm5e7dl2F_77OUaBcg&s",
+    },
+    {
+      id: 11,
+      name: "Llyod",
+      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 290,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlq4196rlEdwQ96S7jeFAupiIoMpfaO_Fu3A&s",
+    },
+    {
+      id: 12,
+      name: "Kelvinator",
+      description: " Consider the material of the drum ",
+      price: 300,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG-qiimF1W41KvKH2KnA7S777PYYOzphP4Yw&s",
+    },
+    {
+      id: 13,
+      name: "ONIDA",
+      description: "Front load washing machines are more energy efficient than older models, using less water and electricity",
+      price: 219,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdP5kSt0quw-o9EgjMGIiHrzi6fipWC8b2Sw&s",
+    },
+    {
+      id: 14,
+      name: "MicroMax",
+      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 199,
+      image:
+        "https://5.imimg.com/data5/ECOM/Default/2024/8/447170480/OE/AJ/TR/5593817/in-ww6000d-ww12dg6b24astl-542991331-500x500.jpg",
+    },
+    {
+      id: 15,
+      name: "MarQ",
+      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 189,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4fKytj0TBBLwc4TE25nZ-vMsnqM11dd93xA&s",
+    },
+  ],
+ 
+};
+// Routes
+app.get("/api/electronics", (req, res) => {
+  res.json(Electronics);
+});
+
+app.get("/api/electronics/TVs", (req, res) => {
+  res.json(Electronics.TVs);
+});
+
+app.get("/api/electronics/Refrigerator", (req, res) => {
+  res.json(Electronics.Refrigerator);
+});
+app.get("/api/electronics/WashingMachine", (req, res) => {
+  res.json(Electronics.WashingMachine);
+});
+app.get("/api/electronics/:category/:id", (req, res) => {
+  const { category, id } = req.params;
+  const item = Electronics[category]?.find(
+    (item) => item.id === parseInt(id)
+  );
+  if (item) {
+    res.json(item);
+  } else {
+    res.status(404).json({ error: "Item not found" });
+  }
+});
 
 // Routes
 app.get("/api/beauty-and-care", (req, res) => {
