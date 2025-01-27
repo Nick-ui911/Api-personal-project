@@ -2048,7 +2048,7 @@ const beautyAndCare = {
   ],
 };
 const Electronics = {
- TVs : [
+  TVs: [
     {
       id: 1,
       name: "Sony Bravia Next Gen Tv",
@@ -2102,8 +2102,7 @@ const Electronics = {
       name: "MI Tv",
       description: "Segment Biggest Screen",
       price: 180,
-      image:
-        "https://cdn.mos.cms.futurecdn.net/XMgVXWexgLztHWXmktXgPJ.jpg",
+      image: "https://cdn.mos.cms.futurecdn.net/XMgVXWexgLztHWXmktXgPJ.jpg",
     },
     {
       id: 8,
@@ -2158,8 +2157,7 @@ const Electronics = {
       name: "Samsung TV",
       description: "OLED Screen with 8K Resolution",
       price: 199,
-      image:
-        "https://m.media-amazon.com/images/I/51dPiXWFboL._SL500_.jpg",
+      image: "https://m.media-amazon.com/images/I/51dPiXWFboL._SL500_.jpg",
     },
     {
       id: 15,
@@ -2170,7 +2168,7 @@ const Electronics = {
         "https://www.digitaltrends.com/wp-content/uploads/2024/07/Sony-Bravia-9-Review-26.jpg?p=1",
     },
   ],
-  Refrigerator : [
+  Refrigerator: [
     {
       id: 1,
       name: "LG",
@@ -2292,11 +2290,12 @@ const Electronics = {
         "https://i2.wp.com/techau.com.au/wp-content/uploads/2019/03/Fridge-black.jpg?fit=893%2C606&ssl=1",
     },
   ],
-  WashingMachine : [
+  WashingMachine: [
     {
       id: 1,
       name: "LG",
-      description: "Consider the types of wash cycles available, such as fast spin cycles",
+      description:
+        "Consider the types of wash cycles available, such as fast spin cycles",
       price: 100,
       image:
         "https://static.toiimg.com/thumb/msid-109640969,imgsize-42852,width-400,resizemode-4/109640969.jpg",
@@ -2312,7 +2311,8 @@ const Electronics = {
     {
       id: 3,
       name: "Whirpool",
-      description: "Front load washing machines are more energy efficient than older models, using less water and electricity",
+      description:
+        "Front load washing machines are more energy efficient than older models, using less water and electricity",
       price: 200,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv6he1SVEdkTza_HAizfJYZDPSeVVKct5hGQ&s",
@@ -2328,7 +2328,8 @@ const Electronics = {
     {
       id: 5,
       name: "Godrej",
-      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
       price: 150,
       image:
         "https://img.etimg.com/thumb/width-1200,height-900,imgsize-43118,resizemode-75,msid-116993427/top-trending-products/major-appliances/washing-machine/best-godrej-washing-machine-in-india-for-fresh-clean-laundry.jpg",
@@ -2336,7 +2337,8 @@ const Electronics = {
     {
       id: 6,
       name: "BOSCH",
-      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
       price: 170,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4MgLjT0gAwH7xZJvZMSEDrqTMtKZ9cO77pA&s",
@@ -2344,7 +2346,8 @@ const Electronics = {
     {
       id: 7,
       name: "Toshiba",
-      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
       price: 180,
       image:
         "https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2024/01/Washing-Machine-1024x512.jpg",
@@ -2352,7 +2355,8 @@ const Electronics = {
     {
       id: 8,
       name: "Haier",
-      description: "Front load washing machines are more energy efficient than older models, using less water and electricity",
+      description:
+        "Front load washing machines are more energy efficient than older models, using less water and electricity",
       price: 130,
       image:
         "https://www.livemint.com/lm-img/img/2024/08/16/1600x900/washing_machine_1723800674554_1723800688433.png",
@@ -2368,7 +2372,8 @@ const Electronics = {
     {
       id: 10,
       name: "Croma",
-      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
       price: 110,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa0Ne2CZmDEoWtZDJLEm5e7dl2F_77OUaBcg&s",
@@ -2376,7 +2381,8 @@ const Electronics = {
     {
       id: 11,
       name: "Llyod",
-      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
       price: 290,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlq4196rlEdwQ96S7jeFAupiIoMpfaO_Fu3A&s",
@@ -2392,7 +2398,8 @@ const Electronics = {
     {
       id: 13,
       name: "ONIDA",
-      description: "Front load washing machines are more energy efficient than older models, using less water and electricity",
+      description:
+        "Front load washing machines are more energy efficient than older models, using less water and electricity",
       price: 219,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdP5kSt0quw-o9EgjMGIiHrzi6fipWC8b2Sw&s",
@@ -2400,7 +2407,8 @@ const Electronics = {
     {
       id: 14,
       name: "MicroMax",
-      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
       price: 199,
       image:
         "https://5.imimg.com/data5/ECOM/Default/2024/8/447170480/OE/AJ/TR/5593817/in-ww6000d-ww12dg6b24astl-542991331-500x500.jpg",
@@ -2408,15 +2416,617 @@ const Electronics = {
     {
       id: 15,
       name: "MarQ",
-      description: "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
       price: 189,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4fKytj0TBBLwc4TE25nZ-vMsnqM11dd93xA&s",
     },
   ],
- 
 };
-// Routes
+const Mobiles = {
+  Samsung: [
+    {
+      id: 1,
+      name: "Samsung M35",
+      description: "Great Dolby Vision and HDR",
+      price: 100,
+      image: "https://img.etimg.com/photo/msid-98945560,imgsize-18294/SamsungGalaxyM33.jpg",
+    },
+    {
+      id: 2,
+      name: "Samsung M55",
+      description: "Best 4K Display",
+      price: 140,
+      image: "https://www.greenware.lk/wp-content/uploads/2024/08/samsung-galaxy-m55-8gb-ram-256-storage-price-in-sri-lanka.webp",
+    },
+    {
+      id: 3,
+      name: "Samsung F14",
+      description: "Great value With great features",
+      price: 200,
+      image: "https://images.samsung.com/is/image/samsung/assets/in/galaxy-5g/smartphones/F_mobile.jpg?$ORIGIN_JPG$",
+    },
+    {
+      id: 4,
+      name: "Samsung A54",
+      description: "Smart with great features",
+      price: 160,
+      image: "https://images.samsung.com/is/image/samsung/assets/in/explore/brand/the-best-samsung-smartphones-for-students/050423-mobile-720x960.jpg?$FB_TYPE_J_F_MO_JPG$",
+    },
+    {
+      id: 5,
+      name: "Samsung Galaxy A35",
+      description: "Smart with Bezel-Free Design",
+      price: 150,
+      image: "https://m.media-amazon.com/images/I/41mrY8kveeL._SL500_.jpg",
+    },
+    {
+      id: 6,
+      name: "Samsung Galaxy A16",
+      description: "1 Billion Color Combination",
+      price: 170,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqjBwXuS2tvBzCIpIKR_J0LEJgoExkTSudILW3seLdbS-ClNpAwfDagzv8voh66UaNqAA&usqp=CAU",
+    },
+    {
+      id: 7,
+      name: "Samsung Galaxy S20",
+      description: "Segment Biggest Screen",
+      price: 180,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZFJZAd_e4M57HFSZhm7tiTnZYL-PfcWnPVSo2XOGvYle756Nx_wUBwh-24OZFJ-U4eaY&usqp=CAU",
+    },
+    {
+      id: 8,
+      name: "Samsung Galaxy S22 Ultra",
+      description: "Android with great features",
+      price: 130,
+      image: "https://images.hindustantimes.com/tech/img/2020/08/28/1600x900/273221c6dfa8416f9a4150ec9f90696c-273221c6dfa8416f9a4150ec9f90696c-1_1598627513527_1598627704851.jpg",
+    },
+    {
+      id: 9,
+      name: "Samsung Galaxy S23",
+      description: "LED Amoled Display with Google Connectivity",
+      price: 109,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMg8rUWoV78WBGDSc_PnaZEqEKtedPMCZu6oelQAMIvSjoXjv46sJJJUS-zvqiaa2T53c&usqp=CAU",
+    },
+    {
+      id: 10,
+      name: "Samsung Galaxy S23 Ultra",
+      description: "4k crystal Vision",
+      price: 110,
+      image: "https://m.media-amazon.com/images/I/61QNWgHXuiL._AC_UF1000,1000_QL80_.jpg",
+    },
+    {
+      id: 11,
+      name: "Samsung Galaxy S24",
+      description: "With Dolby sound System",
+      price: 290,
+      image: "https://images.samsung.com/is/image/samsung/assets/in/explore/brand/5-best-android-mobile-phones-2022-in-india/banner-mobile-720x761-080422.jpg?$720_N_JPG$",
+    },
+    {
+      id: 12,
+      name: "Samsung Galaxy S24 Ultra",
+      description: "Smart WebOs With Great Value",
+      price: 300,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi2sUvpdmt-Yn0aqW0udipIM6-OqtTEOMfVIT2juR24Ef7Dn1VBgae7A4t90txeGRCfLg&usqp=CAU",
+    },
+    {
+      id: 13,
+      name: "Samsung Galaxy S25 Ultra",
+      description: "OLED Screen with 4K Resolution",
+      price: 219,
+      image: "https://images.samsung.com/is/image/samsung/assets/levant/galaxy-5g/5g-products/3P-MO_Note20_20plus.jpg?$720_N_JPG$",
+    },
+    {
+      id: 14,
+      name: "Samsung Galaxy S25",
+      description: "OLED Screen with 8K Resolution",
+      price: 199,
+      image: "https://fdn.gsmarena.com/imgroot/static/headers/makers/samsung-2024-1.jpg",
+    },
+    {
+      id: 15,
+      name: "Samsung Galaxy S24 FE",
+      description: "4k Google With REGZA Power Audio",
+      price: 189,
+      image: "https://image-us.samsung.com/SamsungUS/home/mobile/phones/pdp/galaxy-s21-fe-5g/gallery/SM-G990U-graphite-1.png?$product-details-jpg$",
+    },
+  ],
+  Oneplus: [
+    {
+      id: 1,
+      name: "ONEPLUS 9 PRO",
+      description: "Comes with Inbuilt Stabliser",
+      price: 100,
+      image: "https://fdn.gsmarena.com/imgroot/static/headers/makers/oneplus-2023-1.jpg",
+    },
+    {
+      id: 2,
+      name: "ONEPLUS 10 PRO",
+      description: "Best In all Condition",
+      price: 140,
+      image: "https://resize.indiatvnews.com/en/resize/newbucket/400_-/2024/05/oneplus-smartphone-1716464585.webp",
+    },
+    {
+      id: 3,
+      name: "ONEPLUS 8 PRO",
+      description: "Top Selling Refrigarator",
+      price: 200,
+      image: "https://image01-in.oneplus.net/shop/202104/27/1-M00-24-8B-rB8bwmCICquAAhrYAAQn2Z0kPJQ373.png",
+    },
+    {
+      id: 4,
+      name: "ONEPLUS 7 PRO",
+      description: "Nice Looking and Compact design",
+      price: 160,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAkELQZJXcnJu6vZMsnX_d-5zFD5seXK28Eg&s",
+    },
+    {
+      id: 5,
+      name: "ONEPLUS 11 PRO",
+      description: "Segment Most Affordable",
+      price: 150,
+      image: "https://www.cnet.com/a/img/resize/8ac7a66855041a03b81a81905089dd0ae66627e1/hub/2023/02/05/ab0655f7-6cf3-4d8c-9d05-35c537d310fb/oneplus-11-review-cnet-lanxon-promo-14.jpg?auto=webp&fit=crop&height=362&width=644",
+    },
+    {
+      id: 6,
+      name: "ONEPLUS 12 PRO",
+      description: "Side by Side door Refrigarator",
+      price: 170,
+      image: "https://m.media-amazon.com/images/I/61BT6TG56vL.jpg",
+    },
+    {
+      id: 7,
+      name: "LONEPLUS 13 PRO",
+      description: "401l Frost Free Double Door",
+      price: 180,
+      image: "https://image01-in.oneplus.net/media/202412/17/8ace7f0329d6b4f98f3f4194540623a5.png?x-amz-process=image/format,webp/quality,Q_80",
+    },
+    {
+      id: 8,
+      name: "ONEPLUS 9 ",
+      description: "Frost Free And Convertible",
+      price: 130,
+      image: "https://images.moneycontrol.com/static-mcnews/2024/07/20240731080817_WhatsApp-Image-2024-07-31-at-13.11.59.jpeg?impolicy=website&width=770&height=431",
+    },
+    {
+      id: 9,
+      name: "ONEPLUS 10",
+      description: "Comes With 180l capacity",
+      price: 109,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYZeWbFnFne7QvrElEFKvve3o9SEKKmEuJ5A&s",
+    },
+    {
+      id: 10,
+      name: "ONEPLUS 11",
+      description: "Frost Free Double Door",
+      price: 110,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYcNMgUHopViD7xn6UA8dQzm6cotVuhD-_AQ&s",
+    },
+    {
+      id: 11,
+      name: "ONEPLUS 12",
+      description: "Direct cooling System ",
+      price: 290,
+      image: "https://img.etimg.com/photo/msid-99124255,imgsize-14640/OnePlus10Pro5G.jpg",
+    },
+    {
+      id: 12,
+      name: "ONEPLUS 13",
+      description: "5 Star Double Door",
+      price: 300,
+      image: "https://www.trustedreviews.com/wp-content/uploads/sites/54/2024/01/Best-OnePlus-phone-1.jpg",
+    },
+    {
+      id: 13,
+      name: "ONEPLUS Nord 3",
+      description: "Convertible in Nature ",
+      price: 219,
+      image: "https://electronicparadise.in/cdn/shop/products/ONE-P-MOB-NORD-2T-CPH2401-J-FOG-12-256G1.jpg?v=1699387148&width=1500",
+    },
+    {
+      id: 14,
+      name: "ONEPLUS Nord 4",
+      description: "Comes With Dual Freezer",
+      price: 199,
+      image: "https://image01-in.oneplus.net/ebp/202404/07/1-M00-52-A5-CpgM7mYR-t-AD9lKAAWYyOWBY10861.png?x-amz-process=image/format,webp/quality,Q_80",
+    },
+    {
+      id: 15,
+      name: "ONEPLUS Nord 3 CE",
+      description: "Great Cooling In Segment ",
+      price: 189,
+      image: "https://www.androidauthority.com/wp-content/uploads/2022/02/OnePlus-Nord-CE-2-showing-back-in-hand.jpg",
+    },
+  ],
+  Apple: [
+    {
+      id: 1,
+      name: "Apple 11",
+      description:
+        "Comes With World Best Camera ,Best Display",
+      price: 100,
+      image: "https://m-cdn.phonearena.com/images/article/98169-wide-two_1200/Apple-iPhone-history-the-evolution-of-the-smartphone-that-started-it-all.jpg",
+    },
+    {
+      id: 2,
+      name: "Apple 12",
+      description: "adjustable temperatures, and steam and sanitize cycles",
+      price: 140,
+      image: "https://aihome.com.my/wp-content/uploads/2023/12/Starlight-2.svg",
+    },
+    {
+      id: 3,
+      name: "Apple 13",
+      description:
+        "Comes With World Best Camera ,Best Display",
+      price: 200,
+      image: "https://controlz.world/cdn/shop/files/1_9b71ca73-e40f-4311-b194-3779d63471c2.png?v=1731921503",
+    },
+    {
+      id: 4,
+      name: "Apple 14",
+      description: " Consider the material of the Titanium ",
+      price: 160,
+      image: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-iphone15hero-202309_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1693086369781",
+    },
+    {
+      id: 5,
+      name: "Apple 15",
+      description:
+        "Comes With World Best Camera ,Best Display",
+      price: 150,
+      image: "https://controlz.world/cdn/shop/files/1_9b71ca73-e40f-4311-b194-3779d63471c2.png?v=1731921503",
+    },
+    {
+      id: 6,
+      name: "Apple 16",
+      description:
+        "Great Piece of technology, Nothing Better Than it",
+      price: 170,
+      image: "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-16-plus.jpg",
+    },
+    {
+      id: 7,
+      name: "Apple 13 Pro",
+      description:
+        "Great Piece of technology, Nothing Better Than it",
+      price: 180,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT41oM9lJ9XVYPjrthmaJKF6Kf7A9hUEVWq_Q&s",
+    },
+    {
+      id: 8,
+      name: "Apple 14 Pro",
+      description:
+        "Comes With World Best Camera ,Best Display",
+      price: 130,
+      image: "https://5.imimg.com/data5/SELLER/Default/2023/9/341593572/KQ/KR/YQ/148978464/apple-iphone-14-pro-max-500x500.jpeg",
+    },
+    {
+      id: 9,
+      name: "Apple 15 Pro",
+      description: " Consider Best Frame the material of the World ",
+      price: 109,
+      image: "https://imageio.forbes.com/specials-images/imageserve/65034bdac9e8c78c1728ff0b/Apple-iPhone-15-Pro-lineup-natural-titanium-geo/960x0.jpg?height=711&width=711&fit=bounds",
+    },
+    {
+      id: 10,
+      name: "Apple 12 Pro",
+      description:
+        "Consider Best Frame the material of the World ",
+      price: 110,
+      image: "https://media.istockphoto.com/id/2063514315/photo/hand-holding-iphone-14-pro-max-back-side-view-with-camera-block.jpg?s=612x612&w=0&k=20&c=qFpT2qXrynDZyDCxQRyxhdvdKPcYJxCPbVQb0vORcwg=",
+    },
+    {
+      id: 11,
+      name: "Apple 16 Pro",
+      description:
+        "Consider Best Frame the material of the World ",
+      price: 290,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Zc6nqA3doH09uDTlQTj4jPOMzMlljO01Rg&s",
+    },
+    {
+      id: 12,
+      name: "Apple 15 Pro Max",
+      description: "Consider Best Frame the material of the World ",
+      price: 300,
+      image: "https://tejarra-media.s3.amazonaws.com/20519/conversions/item_XXL_131938444_63e0d342870e0-medium.jpg",
+    },
+    {
+      id: 13,
+      name: "Apple 14 Pro Max",
+      description:
+        "Consider Best Frame the material of the World ",
+      price: 219,
+      image: "https://m.media-amazon.com/images/I/61PBLEFPoKL._AC_CR0%2C0%2C0%2C0_SX352_SY330_.jpg",
+    },
+    {
+      id: 14,
+      name: "Apple 16 Pro Max",
+      description:
+        "Consider Best Frame the material of the World ",
+      price: 199,
+      image: "https://tejarra-media.s3.amazonaws.com/20519/conversions/item_XXL_131938444_63e0d342870e0-medium.jpg",
+    },
+    {
+      id: 15,
+      name: "Apple 13 Pro Max",
+      description:
+        "Consider Best Frame the material of the World ",
+      price: 189,
+      image: "https://cdn.igp.com/f_auto,q_auto,t_pnopt19prodlp/products/p-apple-iphone-14-pro-128gb-206443-m.jpg",
+    },
+  ],
+  Poco: [
+    {
+      id: 1,
+      name: "Poco F5",
+      description:
+        "Consider the types of wash cycles available, such as fast spin cycles",
+      price: 100,
+      image: "https://static.toiimg.com/thumb/resizemode-4,msid-100110365,width-250/100110365.jpg",
+    },
+    {
+      id: 2,
+      name: "Poco F4",
+      description: "adjustable temperatures, and steam and sanitize cycles",
+      price: 140,
+      image: "https://i02.appmifile.com/mi-com-product/fly-birds/poco-f4-gt/7a6612fe17f461a332e9a23a6d4595ec.jpg",
+    },
+    {
+      id: 3,
+      name: "Poco F3",
+      description:
+        "Front load washing machines are more energy efficient than older models, using less water and electricity",
+      price: 200,
+      image: "https://images-cdn.ubuy.co.in/659ecc41501b8c06272fab57-xiaomi-poco-f3-dual-sim-128gb-rom-6gb.jpg",
+    },
+    {
+      id: 4,
+      name: "Poco F2",
+      description: " Consider the material of the drum ",
+      price: 160,
+      image: "https://www.gizmochina.com/wp-content/uploads/2020/03/poco_f2_pro-3-600x600.png",
+    },
+    {
+      id: 5,
+      name: "Poco F6",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 150,
+      image: "https://static.digit.in/POCO-F6-300x300.jpg",
+    },
+    {
+      id: 6,
+      name: "Poco M5",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 170,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKztQEIGG6FD0bVhvzR8Zv3KnrhMIpBDDRKQ&s",
+    },
+    {
+      id: 7,
+      name: "Poco M4",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 180,
+      image: "https://cdn.beebom.com/mobile/2024/02/Untitled-design-80.png",
+    },
+    {
+      id: 8,
+      name: "Poco M3",
+      description:
+        "Front load washing machines are more energy efficient than older models, using less water and electricity",
+      price: 130,
+      image: "https://images.hindustantimes.com/tech/img/2024/04/24/1600x900/After_OnePlus_Mobile_retailers_in_South_India_are__1713944507898_1713944508103.PNG",
+    },
+    {
+      id: 9,
+      name: "Poco X6 5G",
+      description: " Consider the material of the drum ",
+      price: 109,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3CDsjOATtbXwY_BQeo9TczIoc5qMTfMyDUhXdr-j5TL3UDHjkYuJv2oqjVCQzAzzki-o&usqp=CAU",
+    },
+    {
+      id: 10,
+      name: "Poco M7",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 110,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT19iFOK2o2TDnDlbn_643Hdnlj58Vwqn8_ezptzJEiPOy1f7O6YXAOhMwWFpFG_KAPs2c&usqp=CAU",
+    },
+    {
+      id: 11,
+      name: "Poco X7",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 290,
+      image: "https://cdn1.smartprix.com/rx-iusiJUEbv-w1200-h1200/usiJUEbv.webp",
+    },
+    {
+      id: 12,
+      name: "Poco X6",
+      description: " Consider the material of the drum ",
+      price: 300,
+      image: "https://m.media-amazon.com/images/I/412vT-AaI1L.jpg",
+    },
+    {
+      id: 13,
+      name: "Poco C3",
+      description:
+        "Front load washing machines are more energy efficient than older models, using less water and electricity",
+      price: 219,
+      image: "https://www.neolight.in/wp-content/uploads/2022/03/poco-c3-lime-green.jpeg",
+    },
+    {
+      id: 14,
+      name: "Poco C55",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 199,
+      image: "https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/y/9/g/-original-imagnfzyhh8gz8sd.jpeg?q=90&crop=false",
+    },
+    {
+      id: 15,
+      name: "Poco M6",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 189,
+      image: "https://cdn.beebom.com/mobile/poco-x7-pro-5g/poco-x7-pro-5g-front-and-back-1.png",
+    },
+  ],
+  Xiaomi: [
+    {
+      id: 1,
+      name: "Redmi Note 9 pro",
+      description:
+        "Consider the types of wash cycles available, such as fast spin cycles",
+      price: 100,
+      image: "https://i02.appmifile.com/221_operatorx_operatorx_opx/10/04/2024/d7fc500ab13e4098303431e63578d1a8.png?thumb=1&w=500&q=85",
+    },
+    {
+      id: 2,
+      name: "Redmi Note 10 pro",
+      description: "adjustable temperatures, and steam and sanitize cycles",
+      price: 140,
+      image: "https://i02.appmifile.com/998_operator_in/12/08/2021/3c3be7deaa0112fa9c5c4c0c3e1da35d.png",
+    },
+    {
+      id: 3,
+      name: "Redmi Note 11 pro",
+      description:
+        "Front load washing machines are more energy efficient than older models, using less water and electricity",
+      price: 200,
+      image: "https://images.fonearena.com/blog/wp-content/uploads/2024/07/Redmi-13-5G-1.jpg",
+    },
+    {
+      id: 4,
+      name: "Redmi Note 12 pro",
+      description: " Consider the material of the drum ",
+      price: 160,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_JHWSNgwJ-iUOll8GFuYE-yk3ZMPBI_bKgaVbmPS2F5QlFXaGCJM5pBONJHXhhSCHuyU&usqp=CAU",
+    },
+    {
+      id: 5,
+      name: "Redmi Note 13 pro",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 150,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-65D1wIX8SgzBfvvygOeuRhqyoaQRAGe7Yw&s",
+    },
+    {
+      id: 6,
+      name: "Redmi Note 14 pro",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 170,
+      image: "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1733757689/Croma%20Assets/Communication/Mobiles/Images/312118_0_ze2flx.png",
+    },
+    {
+      id: 7,
+      name: "Redmi Note 15 pro",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 180,
+      image: "https://www.91-img.com/gallery_images_uploads/4/5/45d5fe09cdac6210201ff84f13b85fcd0a0a4e45.jpg",
+    },
+    {
+      id: 8,
+      name: "Redmi Note 9 ",
+      description:
+        "Front load washing machines are more energy efficient than older models, using less water and electricity",
+      price: 130,
+      image: "https://i01.appmifile.com/webfile/globalimg/in/cms/BA2627B1-1735-7AE7-B5B3-304C3E73A99B.jpg",
+    },
+    {
+      id: 9,
+      name: "Redmi K20",
+      description: " Consider the material of the drum ",
+      price: 109,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYZdPG0BQ9ZXnJz5v_bfl17P0Q35cHl3a1Og&s",
+    },
+    {
+      id: 10,
+      name: "Redmi K30",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 110,
+      image: "https://ae01.alicdn.com/kf/S0c2d6356889242f9b17d7d66e16897a1r.jpg?width=1327&height=1000&hash=2327",
+    },
+    {
+      id: 11,
+      name: "Redmi K40",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 290,
+      image: "https://i.gadgets360cdn.com/products/large/redmi-12-db-709x800-1686893414.jpg",
+    },
+    {
+      id: 12,
+      name: "Redmi Note 12",
+      description: " Consider the material of the drum ",
+      price: 300,
+      image: "https://i02.appmifile.com/690_operator_sg/28/05/2023/f76d64842787c8a6df8c59858b19496f.png",
+    },
+    {
+      id: 13,
+      name: "Redmi Note 13",
+      description:
+        "Front load washing machines are more energy efficient than older models, using less water and electricity",
+      price: 219,
+      image: "https://i02.appmifile.com/836_operatorx_operatorx_uploadTiptapImage/15/01/2024/5aeb851382051e0b9a6049501e8888c5.jpg",
+    },
+    {
+      id: 14,
+      name: "Redmi Note 14",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 199,
+      image: "https://i03.appmifile.com/979_item_in/17/12/2024/d065316191be257a48fb7516d78e6662.png?thumb=1&q=85",
+    },
+    {
+      id: 15,
+      name: "Redmi A4",
+      description:
+        "Washing clothes is as easy as shoving all clothes inside the washing machine",
+      price: 189,
+      image: "https://i03.appmifile.com/71_item_in/19/11/2024/2f234ba71bffb8735a01cf8f73c758d4.png",
+    },
+  ],
+};
+
+//  mobiles api
+app.get("/api/Mobiles", (req, res) => {
+  res.json(Mobiles);
+});
+
+app.get("/api/Mobiles/Samsung", (req, res) => {
+  res.json(Mobiles.Samsung);
+});
+
+app.get("/api/Mobiles/Apple", (req, res) => {
+  res.json(Mobiles.Apple);
+});
+app.get("/api/Mobiles/Oneplus", (req, res) => {
+  res.json(Mobiles.Oneplus);
+});
+app.get("/api/Mobiles/Poco", (req, res) => {
+  res.json(Mobiles.Poco);
+});
+app.get("/api/Mobiles/Xiaomi", (req, res) => {
+  res.json(Mobiles.Xiaomi);
+});
+app.get("/api/Mobiles/:category/:id", (req, res) => {
+  const { category, id } = req.params;
+  const item = Mobiles[category]?.find((item) => item.id === parseInt(id));
+  if (item) {
+    res.json(item);
+  } else {
+    res.status(404).json({ error: "Item not found" });
+  }
+});
+
+// electronics
 app.get("/api/electronics", (req, res) => {
   res.json(Electronics);
 });
@@ -2433,9 +3043,7 @@ app.get("/api/electronics/WashingMachine", (req, res) => {
 });
 app.get("/api/electronics/:category/:id", (req, res) => {
   const { category, id } = req.params;
-  const item = Electronics[category]?.find(
-    (item) => item.id === parseInt(id)
-  );
+  const item = Electronics[category]?.find((item) => item.id === parseInt(id));
   if (item) {
     res.json(item);
   } else {
