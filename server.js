@@ -1,694 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
 const app = express();
 
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
-
-// Sample data Instamart data
-
-
-
-
-
-
-const beautyAndCare = {
-  hairCare: [
-    {
-      id: 1,
-      name: "Shampoo",
-      description: "Cleanses and nourishes hair.",
-      price: 10,
-      image:
-        "https://orchidlifesciences.com/wp-content/uploads/2024/06/01-22_-01-1024x704.jpg",
-    },
-    {
-      id: 2,
-      name: "Conditioner",
-      description: "Softens and moisturizes hair.",
-      price: 14,
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2023/5/306033332/WN/CY/GZ/90725602/hair-care-products.jpg",
-    },
-    {
-      id: 3,
-      name: "Hair Oil",
-      description: "Promotes hair growth and shine.",
-      price: 20,
-      image:
-        "https://www.vilvahstore.com/cdn/shop/articles/d23265de0513497608026447779ab962.jpg?v=1688116642&width=1500",
-    },
-    {
-      id: 4,
-      name: "Antihairfall Serum",
-      description: "Cleanses and nourishes hair.",
-      price: 16,
-      image:
-        "https://www.hcpwellness.in/wp-content/uploads/2024/02/haircare.jpg",
-    },
-    {
-      id: 5,
-      name: "Conditioner",
-      description: "Softens and moisturizes hair.",
-      price: 15,
-      image:
-        "https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/rockcms/2024-06/240610-beauty-awards-2024-hair-care-winners-kb-sociall-68fe8d.jpg",
-    },
-    {
-      id: 6,
-      name: "Hair Oil",
-      description: "Promotes hair growth and shine.",
-      price: 17,
-      image:
-        "https://images-static.naikaa.com/beauty-blog/wp-content/uploads/2023/01/Explore-The-Goodness-Of-Nature-With-These-Natural-Hair-Care-Brands_bb335.jpg",
-    },
-    {
-      id: 7,
-      name: "Shampoo",
-      description: "Cleanses and nourishes hair.",
-      price: 18,
-      image:
-        "https://cdn11.bigcommerce.com/s-63354/images/stencil/original/image-manager/haircare-top-brands-1-.png?t=1711726947",
-    },
-    {
-      id: 8,
-      name: "Conditioner",
-      description: "Softens and moisturizes hair.",
-      price: 13,
-      image:
-        "https://hips.hearstapps.com/hmg-prod/images/gh-012021-best-hair-products-1642523366.png?crop=0.502xw:1.00xh;0.250xw,0&resize=1200:*",
-    },
-    {
-      id: 9,
-      name: "Hair Oil",
-      description: "Promotes hair growth and shine.",
-      price: 19,
-      image:
-        "https://aromamagic.com/cdn/shop/products/dry-damage.jpg?v=1610107147",
-    },
-    {
-      id: 10,
-      name: "Shampoo",
-      description: "Cleanses and nourishes hair.",
-      price: 11,
-      image:
-        "https://static.vecteezy.com/system/resources/thumbnails/052/301/208/small_2x/discover-and-explore-an-extensive-array-of-organic-hair-care-products-and-essential-tools-that-are-perfect-for-achieving-a-professional-salonquality-finish-from-the-comfort-of-your-own-home-photo.jpg",
-    },
-    {
-      id: 11,
-      name: "Conditioner",
-      description: "Softens and moisturizes hair.",
-      price: 29,
-      image:
-        "https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2024-10/Top%209%20Hair%20Care%20Brands%20in%20India%20For%20Men%20and%20Women%20%281%29.jpg",
-    },
-    {
-      id: 12,
-      name: "Hair Oil",
-      description: "Promotes hair growth and shine.",
-      price: 30,
-      image:
-        "https://nypost.com/wp-content/uploads/sites/2/2023/05/haircare-under-25-1.jpg?quality=75&strip=all",
-    },
-    {
-      id: 13,
-      name: "Shampoo",
-      description: "Cleanses and nourishes hair.",
-      price: 21,
-      image:
-        "https://img.freepik.com/free-photo/top-view-toilet-bag-table_23-2149879949.jpg?semt=ais_incoming",
-    },
-    {
-      id: 14,
-      name: "Conditioner",
-      description: "Softens and moisturizes hair.",
-      price: 19,
-      image:
-        "https://t4.ftcdn.net/jpg/03/59/35/47/360_F_359354700_9witgG0yfrLJM97jxfVqaf40vJAk4xr4.jpg",
-    },
-    {
-      id: 15,
-      name: "Hair Oil",
-      description: "Promotes hair growth and shine.",
-      price: 18,
-      image:
-        "https://images.unsplash.com/photo-1712112797786-d43620cac1fd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGFpciUyMHByb2R1Y3R8ZW58MHx8MHx8fDA%3D",
-    },
-  ],
-  skinCare: [
-    {
-      id: 1,
-      name: "Moisturizer",
-      description: "Hydrates and smoothens skin.",
-      price: 19,
-      image:
-        "https://typsybeauty.com/cdn/shop/articles/types_of_skin_care_products.jpg?v=1723619039",
-    },
-    {
-      id: 2,
-      name: "Sunscreen",
-      description: "Protects skin from UV rays.",
-      price: 15,
-      image:
-        "https://theloveco.in/cdn/shop/articles/10-must-have-luxury-body-care-products-the-love-co.jpg?v=1729317123",
-    },
-    {
-      id: 3,
-      name: "Face Wash",
-      description: "Removes dirt and impurities.",
-      price: 12,
-      image:
-        "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2024-06/240610-beauty-awards-2024-skincare-winners-vl-social-91be20.jpg",
-    },
-    {
-      id: 4,
-      name: "Moisturizer",
-      description: "Hydrates and smoothens skin.",
-      price: 14,
-      image:
-        "https://hips.hearstapps.com/hmg-prod/images/gh-best-skincare-products-6557978b58b57.png?crop=0.888888888888889xw:1xh;center,top&resize=1200:*",
-    },
-    {
-      id: 5,
-      name: "Sunscreen",
-      description: "Protects skin from UV rays.",
-      price: 18,
-      image:
-        "https://www.vilvahstore.com/cdn/shop/articles/Choose_Natural_Skin_Care_Products.jpg?v=1721716430&width=2048",
-    },
-    {
-      id: 6,
-      name: "Face Wash",
-      description: "Removes dirt and impurities.",
-      price: 20,
-      image:
-        "https://orchidlifesciences.com/wp-content/uploads/2024/06/01-14-01-1024x704.jpg",
-    },
-    {
-      id: 7,
-      name: "Moisturizer",
-      description: "Hydrates and smoothens skin.",
-      price: 16,
-      image:
-        "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1024-512,f_auto,q_auto:best/rockcms/2024-01/240117-staff-skin-care-routines-social-2c85d8.jpg",
-    },
-    {
-      id: 8,
-      name: "Sunscreen",
-      description: "Protects skin from UV rays.",
-      price: 17,
-      image:
-        "https://www.bodytales.in/cdn/shop/products/Combo-5-Hydtrating-_Glowing-Skin-Care-Combo_Post.jpg?v=1678090122",
-    },
-    {
-      id: 9,
-      name: "Face Wash",
-      description: "Removes dirt and impurities.",
-      price: 29,
-      image:
-        "https://cdn.shopify.com/s/files/1/0070/7032/files/how-to-start-a-skincare-line-glow-oasis.jpg?v=1666895341",
-    },
-    {
-      id: 10,
-      name: "Moisturizer",
-      description: "Hydrates and smoothens skin.",
-      price: 29,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0F2IzkX_Lf1xxoZnJblbGpv7sNVxvDM_E7Q&s",
-    },
-    {
-      id: 11,
-      name: "Sunscreen",
-      description: "Protects skin from UV rays.",
-      price: 24,
-      image:
-        "https://hips.hearstapps.com/hmg-prod/images/2-natural-skincare-brands-670eadb4e4fcf.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=1120:*",
-    },
-    {
-      id: 12,
-      name: "Face Wash",
-      description: "Removes dirt and impurities.",
-      price: 22,
-      image:
-        "https://www.ubuy.co.in/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaW4vNjVmNTBkNjk1ZmExMDkwYjVjNDEzNGM3LXNraW4tY2FyZS1wcm9kdWN0cy1zZXQtZ3JlZW4tdGVhLXNraW4uanBn.jpg",
-    },
-    {
-      id: 13,
-      name: "Moisturizer",
-      description: "Hydrates and smoothens skin.",
-      price: 21,
-      image: "https://m.media-amazon.com/images/I/61xtviA5U4L.jpg",
-    },
-    {
-      id: 14,
-      name: "Sunscreen",
-      description: "Protects skin from UV rays.",
-      price: 31,
-      image: "https://i.ytimg.com/vi/Twgc0ORBdDQ/maxresdefault.jpg",
-    },
-    {
-      id: 15,
-      name: "Face Wash",
-      description: "Removes dirt and impurities.",
-      price: 32,
-      image:
-        "https://www.skincenterofsouthmiami.com/wp-content/uploads/2018/06/Skin-Center-of-South-Miami-Facials-and-Skin-Care.jpg",
-    },
-  ],
-};
-const Electronics = {
-  TVs: [
-    {
-      id: 1,
-      name: "Sony Bravia Next Gen Tv",
-      description: "Great Dolby Vision and HDR",
-      price: 100,
-      image:
-        "https://m.media-amazon.com/images/I/8159EvuNJaL._AC_UF1000,1000_QL80_.jpg",
-    },
-    {
-      id: 2,
-      name: "LG Nanocell",
-      description: "Best 4K TV",
-      price: 140,
-      image:
-        "https://www.lg.com/content/dam/channel/wcms/in/images/tvs/55qned88t6a-atr-eail-in-c/gallery/55QNED88T6A-DZ-03.jpg/_jcr_content/renditions/thum-1600x1062.jpeg",
-    },
-    {
-      id: 3,
-      name: "Haier TV",
-      description: "Great value With great features",
-      price: 200,
-      image:
-        "https://cdn.mos.cms.futurecdn.net/LMav3AW8YLsTQg5Ucz7U85-1200-80.jpg",
-    },
-    {
-      id: 4,
-      name: "REDMI Tv",
-      description: "Smart TV with great features",
-      price: 160,
-      image:
-        "https://vdaadmin.venusdigitalarcade.in/media/catalog/product/cache/a4aa45628d61667009e8bfd73fcc061b/1/7/17_14_58.jpg",
-    },
-    {
-      id: 5,
-      name: "LG QNED",
-      description: "Smart TV with Bezel-Free Design",
-      price: 150,
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2024/12/475493328/WU/UC/OZ/46183170/55-inch-sony-led-tv.jpeg",
-    },
-    {
-      id: 6,
-      name: "Aiwa OLED",
-      description: "1 Billion Color Combination",
-      price: 170,
-      image:
-        "https://static.toiimg.com/thumb/msid-99244997,imgsize-657260,width-400,resizemode-4/99244997.jpg",
-    },
-    {
-      id: 7,
-      name: "MI Tv",
-      description: "Segment Biggest Screen",
-      price: 180,
-      image: "https://cdn.mos.cms.futurecdn.net/XMgVXWexgLztHWXmktXgPJ.jpg",
-    },
-    {
-      id: 8,
-      name: "Realme Techlife",
-      description: "Android TV with great features",
-      price: 130,
-      image:
-        "https://i.gadgets360cdn.com/products/televisions/large/1548153588_832_lg_55-inch-led-full-hd-tv-55la9700.jpg",
-    },
-    {
-      id: 9,
-      name: "Xiaomi TV",
-      description: "LED smart TV with Google Connectivity",
-      price: 109,
-      image:
-        "https://i.rtings.com/assets/products/bcKbP8uc/sony-x85k/design-medium.jpg?format=auto",
-    },
-    {
-      id: 10,
-      name: "Motorola Invision",
-      description: "4k crystal Vision",
-      price: 110,
-      image:
-        "https://rukminim2.flixcart.com/image/850/1000/xif0q/television/p/n/y/-original-imagxyxzyvweg64x.jpeg?q=90&crop=false",
-    },
-    {
-      id: 11,
-      name: "Sony Bravia",
-      description: "With Dolby sound System",
-      price: 290,
-      image:
-        "https://cdn.mos.cms.futurecdn.net/w7xUMcWX7BMUMzayo4SzYE-1200-80.jpg",
-    },
-    {
-      id: 12,
-      name: "Acer TV",
-      description: "Smart WebOs TV",
-      price: 300,
-      image:
-        "https://static.langimg.com/thumb/110895065/navbharat-times-110895065.jpg?width=540&resizemode=3",
-    },
-    {
-      id: 13,
-      name: "LG TV",
-      description: "OLED Screen with 4K Resolution",
-      price: 219,
-      image:
-        "https://www.hindustantimes.com/ht-img/img/2024/10/04/550x309/Best_4K_TV_1728035464483_1728035465095.jpeg",
-    },
-    {
-      id: 14,
-      name: "Samsung TV",
-      description: "OLED Screen with 8K Resolution",
-      price: 199,
-      image: "https://m.media-amazon.com/images/I/51dPiXWFboL._SL500_.jpg",
-    },
-    {
-      id: 15,
-      name: "Sony Premium",
-      description: "4k Google TV With REGZA Power Audio",
-      price: 189,
-      image:
-        "https://www.digitaltrends.com/wp-content/uploads/2024/07/Sony-Bravia-9-Review-26.jpg?p=1",
-    },
-  ],
-  Refrigerator: [
-    {
-      id: 1,
-      name: "LG",
-      description: "Comes with Inbuilt Stabliser",
-      price: 100,
-      image:
-        "https://c.ndtvimg.com/2020-08/hq3r6of8_refrigerator_625x300_19_August_20.jpg",
-    },
-    {
-      id: 2,
-      name: "Samsung",
-      description: "Best In all Condition",
-      price: 140,
-      image:
-        "https://hips.hearstapps.com/hmg-prod/images/best-fridges-673bac80a584c.png?crop=0.502xw:1.00xh;0.250xw,0&resize=1200:*",
-    },
-    {
-      id: 3,
-      name: "Haier",
-      description: "Top Selling Refrigarator",
-      price: 200,
-      image:
-        "https://media.istockphoto.com/id/842160124/photo/refrigerator-with-fruits-and-vegetables.jpg?s=612x612&w=0&k=20&c=j0W4TPOevBpp3mS6_X2FHV1uWVl3fcfdGAt2X3l8XzE=",
-    },
-    {
-      id: 4,
-      name: "Whirpool",
-      description: "Nice Looking and Compact design",
-      price: 160,
-      image:
-        "https://static.toiimg.com/thumb/msid-80010563,width-1070,height-580,imgsize-229684,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
-    },
-    {
-      id: 5,
-      name: "Panasonic",
-      description: "Segment Most Affordable",
-      price: 150,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZ6IH_8eyHigEi2UFtcqNfs12Dc83Uci5AQ&s",
-    },
-    {
-      id: 6,
-      name: "Samsung 653l",
-      description: "Side by Side door Refrigarator",
-      price: 170,
-      image:
-        "https://www.lg.com/content/dam/channel/wcms/in/magazine/wish-to-get-the-best-refrigerator-for-your-home-look-out-for-these-four-features/blog-01v1.jpg",
-    },
-    {
-      id: 7,
-      name: "LG 655l",
-      description: "401l Frost Free Double Door",
-      price: 180,
-      image:
-        "https://www.whirlpool.com/is/image/content/dam/business-unit/whirlpoolv2/en-us/marketing-content/site-assets/page-content/oc-articles/types-of-refrigerators/types-of-refrigerators_Mobile_2.jpg?fmt=png-alpha&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&scl=1&constrain=fit,1",
-    },
-    {
-      id: 8,
-      name: "Haier wifi",
-      description: "Frost Free And Convertible",
-      price: 130,
-      image:
-        "https://kitchenaid-h.assetsadobe.com/is/image/content/dam/global/whirlpool/refrigeration/freestanding-refrigerator/images/hero-WRB322DMHV.tif?&fmt=png-alpha&resMode=sharp2&wid=850&hei=850",
-    },
-    {
-      id: 9,
-      name: "Llyod",
-      description: "Comes With 180l capacity",
-      price: 109,
-      image:
-        "https://images.livemint.com/img/2024/08/02/600x338/refrigerator_1722596788297_1722596805972.png",
-    },
-    {
-      id: 10,
-      name: "Toshiba",
-      description: "Frost Free Double Door",
-      price: 110,
-      image:
-        "https://www.whirlpool.com/is/image/content/dam/business-unit/whirlpoolv2/en-us/marketing-content/site-assets/page-content/oc-articles/types-of-refrigerators/types-of-refrigerators_Thumbnail.jpg?wid=1200&fmt=webp",
-    },
-    {
-      id: 11,
-      name: "Voltas",
-      description: "Direct cooling System ",
-      price: 290,
-      image:
-        "https://img.etimg.com/thumb/width-420,height-315,imgsize-116140,resizemode-75,msid-110999283/top-trending-products/news/12-best-selling-refrigerators-in-india-june-2024/refrigerator.jpg",
-    },
-    {
-      id: 12,
-      name: "IFB",
-      description: "5 Star Double Door",
-      price: 300,
-      image:
-        "https://www.hindustantimes.com/ht-img/img/2023/09/18/550x309/hgjngh_1695038166488_1695038178583.jpg",
-    },
-    {
-      id: 13,
-      name: "BOSCH",
-      description: "Convertible in Nature ",
-      price: 219,
-      image:
-        "https://www.lg.com/content/dam/channel/wcms/in/magazine/frost-free-fridge-freezer/frost-free-fridge-freezer-02.jpg",
-    },
-    {
-      id: 14,
-      name: "Hisense",
-      description: "Comes With Dual Freezer",
-      price: 199,
-      image:
-        "https://www.hindustantimes.com/ht-img/img/2023/12/04/1600x900/fridge_1701672459244_1701672459623.jpg",
-    },
-    {
-      id: 15,
-      name: "MarQ",
-      description: "Great Cooling In Segment ",
-      price: 189,
-      image:
-        "https://i2.wp.com/techau.com.au/wp-content/uploads/2019/03/Fridge-black.jpg?fit=893%2C606&ssl=1",
-    },
-  ],
-  WashingMachine: [
-    {
-      id: 1,
-      name: "LG",
-      description:
-        "Consider the types of wash cycles available, such as fast spin cycles",
-      price: 100,
-      image:
-        "https://static.toiimg.com/thumb/msid-109640969,imgsize-42852,width-400,resizemode-4/109640969.jpg",
-    },
-    {
-      id: 2,
-      name: "Samsung",
-      description: "adjustable temperatures, and steam and sanitize cycles",
-      price: 140,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE3J1GA2kQuYBSRb5uURLMF_kapCfkXhOYzg&s",
-    },
-    {
-      id: 3,
-      name: "Whirpool",
-      description:
-        "Front load washing machines are more energy efficient than older models, using less water and electricity",
-      price: 200,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv6he1SVEdkTza_HAizfJYZDPSeVVKct5hGQ&s",
-    },
-    {
-      id: 4,
-      name: "IFB",
-      description: " Consider the material of the drum ",
-      price: 160,
-      image:
-        "https://media3.bsh-group.com/Product_Shots/5120x/19753969_WGG04409GB_STP_def.webp",
-    },
-    {
-      id: 5,
-      name: "Godrej",
-      description:
-        "Washing clothes is as easy as shoving all clothes inside the washing machine",
-      price: 150,
-      image:
-        "https://img.etimg.com/thumb/width-1200,height-900,imgsize-43118,resizemode-75,msid-116993427/top-trending-products/major-appliances/washing-machine/best-godrej-washing-machine-in-india-for-fresh-clean-laundry.jpg",
-    },
-    {
-      id: 6,
-      name: "BOSCH",
-      description:
-        "Washing clothes is as easy as shoving all clothes inside the washing machine",
-      price: 170,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4MgLjT0gAwH7xZJvZMSEDrqTMtKZ9cO77pA&s",
-    },
-    {
-      id: 7,
-      name: "Toshiba",
-      description:
-        "Washing clothes is as easy as shoving all clothes inside the washing machine",
-      price: 180,
-      image:
-        "https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2024/01/Washing-Machine-1024x512.jpg",
-    },
-    {
-      id: 8,
-      name: "Haier",
-      description:
-        "Front load washing machines are more energy efficient than older models, using less water and electricity",
-      price: 130,
-      image:
-        "https://www.livemint.com/lm-img/img/2024/08/16/1600x900/washing_machine_1723800674554_1723800688433.png",
-    },
-    {
-      id: 9,
-      name: "ElectroLux",
-      description: " Consider the material of the drum ",
-      price: 109,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSA_UdXpfHVor4MqGceSl3_Io1byyHc0qUpw&s",
-    },
-    {
-      id: 10,
-      name: "Croma",
-      description:
-        "Washing clothes is as easy as shoving all clothes inside the washing machine",
-      price: 110,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa0Ne2CZmDEoWtZDJLEm5e7dl2F_77OUaBcg&s",
-    },
-    {
-      id: 11,
-      name: "Llyod",
-      description:
-        "Washing clothes is as easy as shoving all clothes inside the washing machine",
-      price: 290,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlq4196rlEdwQ96S7jeFAupiIoMpfaO_Fu3A&s",
-    },
-    {
-      id: 12,
-      name: "Kelvinator",
-      description: " Consider the material of the drum ",
-      price: 300,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG-qiimF1W41KvKH2KnA7S777PYYOzphP4Yw&s",
-    },
-    {
-      id: 13,
-      name: "ONIDA",
-      description:
-        "Front load washing machines are more energy efficient than older models, using less water and electricity",
-      price: 219,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdP5kSt0quw-o9EgjMGIiHrzi6fipWC8b2Sw&s",
-    },
-    {
-      id: 14,
-      name: "MicroMax",
-      description:
-        "Washing clothes is as easy as shoving all clothes inside the washing machine",
-      price: 199,
-      image:
-        "https://5.imimg.com/data5/ECOM/Default/2024/8/447170480/OE/AJ/TR/5593817/in-ww6000d-ww12dg6b24astl-542991331-500x500.jpg",
-    },
-    {
-      id: 15,
-      name: "MarQ",
-      description:
-        "Washing clothes is as easy as shoving all clothes inside the washing machine",
-      price: 189,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4fKytj0TBBLwc4TE25nZ-vMsnqM11dd93xA&s",
-    },
-  ],
-};
-
-
-// electronics
-app.get("/api/electronics", (req, res) => {
-  res.json(Electronics);
-});
-
-app.get("/api/electronics/TVs", (req, res) => {
-  res.json(Electronics.TVs);
-});
-
-app.get("/api/electronics/Refrigerator", (req, res) => {
-  res.json(Electronics.Refrigerator);
-});
-app.get("/api/electronics/WashingMachine", (req, res) => {
-  res.json(Electronics.WashingMachine);
-});
-app.get("/api/electronics/:category/:id", (req, res) => {
-  const { category, id } = req.params;
-  const item = Electronics[category]?.find((item) => item.id === parseInt(id));
-  if (item) {
-    res.json(item);
-  } else {
-    res.status(404).json({ error: "Item not found" });
-  }
-});
-
-// Routes
-app.get("/api/beauty-and-care", (req, res) => {
-  res.json(beautyAndCare);
-});
-
-app.get("/api/beauty-and-care/hair-care", (req, res) => {
-  res.json(beautyAndCare.hairCare);
-});
-
-app.get("/api/beauty-and-care/skin-care", (req, res) => {
-  res.json(beautyAndCare.skinCare);
-});
-
-app.get("/api/beauty-and-care/:category/:id", (req, res) => {
-  const { category, id } = req.params;
-  const item = beautyAndCare[category]?.find(
-    (item) => item.id === parseInt(id)
-  );
-  if (item) {
-    res.json(item);
-  } else {
-    res.status(404).json({ error: "Item not found" });
-  }
-});
-
-
 
 const data = {
   restaurants: [
@@ -1298,7 +615,7 @@ const data = {
       price: 68,
     },
   ],
- DineIn : [
+  DineIn: [
     {
       id: 10,
       price: 4900,
@@ -1443,7 +760,7 @@ const data = {
       image: "https://luxebook.in/wp-content/uploads/2023/01/Prive.jpg",
     },
   ],
- Trending : [
+  Trending: [
     {
       id: 1,
       name: "Sugar",
@@ -1545,7 +862,8 @@ const data = {
     {
       id: 15,
       name: "Foundation",
-      image: "https://tiimg.tistatic.com/fp/1/008/999/makeup-foundation-631.jpg",
+      image:
+        "https://tiimg.tistatic.com/fp/1/008/999/makeup-foundation-631.jpg",
       price: 32,
     },
     {
@@ -1556,7 +874,7 @@ const data = {
       price: 15,
     },
   ],
- Fitness : [
+  Fitness: [
     {
       id: 1,
       name: "",
@@ -1661,7 +979,7 @@ const data = {
       price: 75,
     },
   ],
- HomeKitchen : [
+  HomeKitchen: [
     {
       id: 1,
       name: "",
@@ -1766,7 +1084,7 @@ const data = {
       price: 75,
     },
   ],
- Stationary : [
+  Stationary: [
     {
       id: 1,
       name: "",
@@ -1871,7 +1189,7 @@ const data = {
       price: 75,
     },
   ],
- Books : [
+  Books: [
     {
       id: 1,
       name: "",
@@ -1976,7 +1294,7 @@ const data = {
       price: 75,
     },
   ],
- Toys :[
+  Toys: [
     {
       id: 1,
       name: "",
@@ -2081,18 +1399,20 @@ const data = {
       price: 75,
     },
   ],
-MenFashion :[
+  MenFashion: [
     {
       id: 1,
       name: "Track Pant",
-      image: "https://berge.co.in/wp-content/uploads/2022/06/KP10-BLACK-1-v3.jpg",
+      image:
+        "https://berge.co.in/wp-content/uploads/2022/06/KP10-BLACK-1-v3.jpg",
       price: 99,
       size: "M",
     },
     {
       id: 2,
       name: "Cap",
-      image: "https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg",
+      image:
+        "https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg",
       price: 80,
       size: "S",
     },
@@ -2109,7 +1429,7 @@ MenFashion :[
       name: "Jacket",
       image:
         "https://www.mrporter.com/variants/images/1647597331238803/in/w2000_q60.jpg",
-      price:59,
+      price: 59,
       size: "M",
     },
     {
@@ -2215,7 +1535,7 @@ MenFashion :[
       size: "L",
     },
   ],
-WomenFashion : [
+  WomenFashion: [
     {
       id: 1,
       name: "Track Pant",
@@ -2274,7 +1594,7 @@ WomenFashion : [
     },
     {
       id: 8,
-      name: 42,
+      name: "Cargo",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOQ4w9fAs7wIz2tahQdRqYhuylVkgJF6DWkQ&s",
       price: 55,
@@ -2315,7 +1635,8 @@ WomenFashion : [
     {
       id: 12,
       name: "SweatShirt",
-      image: "https://images.meesho.com/images/products/345807383/fohx7_512.webp",
+      image:
+        "https://images.meesho.com/images/products/345807383/fohx7_512.webp",
       price: 31,
       size: "M",
     },
@@ -2352,7 +1673,7 @@ WomenFashion : [
       size: "M",
     },
   ],
-KidsFashion : [
+  KidsFashion: [
     {
       id: 1,
       name: "Track Pant",
@@ -2395,7 +1716,8 @@ KidsFashion : [
     {
       id: 5,
       name: "T-shirt",
-      image: "https://printnstyle.in/wp-content/uploads/2024/11/CRMS-KID-08.jpg",
+      image:
+        "https://printnstyle.in/wp-content/uploads/2024/11/CRMS-KID-08.jpg",
       price: 49,
       size: "S",
     },
@@ -2410,7 +1732,8 @@ KidsFashion : [
     {
       id: 7,
       name: "Loose Fit Shirt",
-      image: "https://images.meesho.com/images/products/283490788/negwt_512.webp",
+      image:
+        "https://images.meesho.com/images/products/283490788/negwt_512.webp",
       price: 39,
       size: "L",
     },
@@ -2479,12 +1802,13 @@ KidsFashion : [
     {
       id: 16,
       name: "Black Shirt",
-      image: "https://homafy.com/wp-content/uploads/2024/05/polo-tshirt-set.webp",
+      image:
+        "https://homafy.com/wp-content/uploads/2024/05/polo-tshirt-set.webp",
       price: 75,
       size: "M",
     },
   ],
-Mobiles : {
+  Mobiles: {
     Samsung: [
       {
         id: 1,
@@ -2741,7 +2065,8 @@ Mobiles : {
         name: "Apple 12",
         description: "adjustable temperatures, and steam and sanitize cycles",
         price: 140,
-        image: "https://aihome.com.my/wp-content/uploads/2023/12/Starlight-2.svg",
+        image:
+          "https://aihome.com.my/wp-content/uploads/2023/12/Starlight-2.svg",
       },
       {
         id: 3,
@@ -3111,12 +2436,629 @@ Mobiles : {
       },
     ],
   },
-  
+  beautyAndCare: {
+    hairCare: [
+      {
+        id: 1,
+        name: "Shampoo",
+        description: "Cleanses and nourishes hair.",
+        price: 10,
+        image:
+          "https://orchidlifesciences.com/wp-content/uploads/2024/06/01-22_-01-1024x704.jpg",
+      },
+      {
+        id: 2,
+        name: "Conditioner",
+        description: "Softens and moisturizes hair.",
+        price: 14,
+        image:
+          "https://5.imimg.com/data5/SELLER/Default/2023/5/306033332/WN/CY/GZ/90725602/hair-care-products.jpg",
+      },
+      {
+        id: 3,
+        name: "Hair Oil",
+        description: "Promotes hair growth and shine.",
+        price: 20,
+        image:
+          "https://www.vilvahstore.com/cdn/shop/articles/d23265de0513497608026447779ab962.jpg?v=1688116642&width=1500",
+      },
+      {
+        id: 4,
+        name: "Antihairfall Serum",
+        description: "Cleanses and nourishes hair.",
+        price: 16,
+        image:
+          "https://www.hcpwellness.in/wp-content/uploads/2024/02/haircare.jpg",
+      },
+      {
+        id: 5,
+        name: "Conditioner",
+        description: "Softens and moisturizes hair.",
+        price: 15,
+        image:
+          "https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/rockcms/2024-06/240610-beauty-awards-2024-hair-care-winners-kb-sociall-68fe8d.jpg",
+      },
+      {
+        id: 6,
+        name: "Hair Oil",
+        description: "Promotes hair growth and shine.",
+        price: 17,
+        image:
+          "https://images-static.naikaa.com/beauty-blog/wp-content/uploads/2023/01/Explore-The-Goodness-Of-Nature-With-These-Natural-Hair-Care-Brands_bb335.jpg",
+      },
+      {
+        id: 7,
+        name: "Shampoo",
+        description: "Cleanses and nourishes hair.",
+        price: 18,
+        image:
+          "https://cdn11.bigcommerce.com/s-63354/images/stencil/original/image-manager/haircare-top-brands-1-.png?t=1711726947",
+      },
+      {
+        id: 8,
+        name: "Conditioner",
+        description: "Softens and moisturizes hair.",
+        price: 13,
+        image:
+          "https://hips.hearstapps.com/hmg-prod/images/gh-012021-best-hair-products-1642523366.png?crop=0.502xw:1.00xh;0.250xw,0&resize=1200:*",
+      },
+      {
+        id: 9,
+        name: "Hair Oil",
+        description: "Promotes hair growth and shine.",
+        price: 19,
+        image:
+          "https://aromamagic.com/cdn/shop/products/dry-damage.jpg?v=1610107147",
+      },
+      {
+        id: 10,
+        name: "Shampoo",
+        description: "Cleanses and nourishes hair.",
+        price: 11,
+        image:
+          "https://static.vecteezy.com/system/resources/thumbnails/052/301/208/small_2x/discover-and-explore-an-extensive-array-of-organic-hair-care-products-and-essential-tools-that-are-perfect-for-achieving-a-professional-salonquality-finish-from-the-comfort-of-your-own-home-photo.jpg",
+      },
+      {
+        id: 11,
+        name: "Conditioner",
+        description: "Softens and moisturizes hair.",
+        price: 29,
+        image:
+          "https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2024-10/Top%209%20Hair%20Care%20Brands%20in%20India%20For%20Men%20and%20Women%20%281%29.jpg",
+      },
+      {
+        id: 12,
+        name: "Hair Oil",
+        description: "Promotes hair growth and shine.",
+        price: 30,
+        image:
+          "https://nypost.com/wp-content/uploads/sites/2/2023/05/haircare-under-25-1.jpg?quality=75&strip=all",
+      },
+      {
+        id: 13,
+        name: "Shampoo",
+        description: "Cleanses and nourishes hair.",
+        price: 21,
+        image:
+          "https://img.freepik.com/free-photo/top-view-toilet-bag-table_23-2149879949.jpg?semt=ais_incoming",
+      },
+      {
+        id: 14,
+        name: "Conditioner",
+        description: "Softens and moisturizes hair.",
+        price: 19,
+        image:
+          "https://t4.ftcdn.net/jpg/03/59/35/47/360_F_359354700_9witgG0yfrLJM97jxfVqaf40vJAk4xr4.jpg",
+      },
+      {
+        id: 15,
+        name: "Hair Oil",
+        description: "Promotes hair growth and shine.",
+        price: 18,
+        image:
+          "https://images.unsplash.com/photo-1712112797786-d43620cac1fd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGFpciUyMHByb2R1Y3R8ZW58MHx8MHx8fDA%3D",
+      },
+    ],
+    skinCare: [
+      {
+        id: 1,
+        name: "Moisturizer",
+        description: "Hydrates and smoothens skin.",
+        price: 19,
+        image:
+          "https://typsybeauty.com/cdn/shop/articles/types_of_skin_care_products.jpg?v=1723619039",
+      },
+      {
+        id: 2,
+        name: "Sunscreen",
+        description: "Protects skin from UV rays.",
+        price: 15,
+        image:
+          "https://theloveco.in/cdn/shop/articles/10-must-have-luxury-body-care-products-the-love-co.jpg?v=1729317123",
+      },
+      {
+        id: 3,
+        name: "Face Wash",
+        description: "Removes dirt and impurities.",
+        price: 12,
+        image:
+          "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2024-06/240610-beauty-awards-2024-skincare-winners-vl-social-91be20.jpg",
+      },
+      {
+        id: 4,
+        name: "Moisturizer",
+        description: "Hydrates and smoothens skin.",
+        price: 14,
+        image:
+          "https://hips.hearstapps.com/hmg-prod/images/gh-best-skincare-products-6557978b58b57.png?crop=0.888888888888889xw:1xh;center,top&resize=1200:*",
+      },
+      {
+        id: 5,
+        name: "Sunscreen",
+        description: "Protects skin from UV rays.",
+        price: 18,
+        image:
+          "https://www.vilvahstore.com/cdn/shop/articles/Choose_Natural_Skin_Care_Products.jpg?v=1721716430&width=2048",
+      },
+      {
+        id: 6,
+        name: "Face Wash",
+        description: "Removes dirt and impurities.",
+        price: 20,
+        image:
+          "https://orchidlifesciences.com/wp-content/uploads/2024/06/01-14-01-1024x704.jpg",
+      },
+      {
+        id: 7,
+        name: "Moisturizer",
+        description: "Hydrates and smoothens skin.",
+        price: 16,
+        image:
+          "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1024-512,f_auto,q_auto:best/rockcms/2024-01/240117-staff-skin-care-routines-social-2c85d8.jpg",
+      },
+      {
+        id: 8,
+        name: "Sunscreen",
+        description: "Protects skin from UV rays.",
+        price: 17,
+        image:
+          "https://www.bodytales.in/cdn/shop/products/Combo-5-Hydtrating-_Glowing-Skin-Care-Combo_Post.jpg?v=1678090122",
+      },
+      {
+        id: 9,
+        name: "Face Wash",
+        description: "Removes dirt and impurities.",
+        price: 29,
+        image:
+          "https://cdn.shopify.com/s/files/1/0070/7032/files/how-to-start-a-skincare-line-glow-oasis.jpg?v=1666895341",
+      },
+      {
+        id: 10,
+        name: "Moisturizer",
+        description: "Hydrates and smoothens skin.",
+        price: 29,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0F2IzkX_Lf1xxoZnJblbGpv7sNVxvDM_E7Q&s",
+      },
+      {
+        id: 11,
+        name: "Sunscreen",
+        description: "Protects skin from UV rays.",
+        price: 24,
+        image:
+          "https://hips.hearstapps.com/hmg-prod/images/2-natural-skincare-brands-670eadb4e4fcf.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=1120:*",
+      },
+      {
+        id: 12,
+        name: "Face Wash",
+        description: "Removes dirt and impurities.",
+        price: 22,
+        image:
+          "https://www.ubuy.co.in/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaW4vNjVmNTBkNjk1ZmExMDkwYjVjNDEzNGM3LXNraW4tY2FyZS1wcm9kdWN0cy1zZXQtZ3JlZW4tdGVhLXNraW4uanBn.jpg",
+      },
+      {
+        id: 13,
+        name: "Moisturizer",
+        description: "Hydrates and smoothens skin.",
+        price: 21,
+        image: "https://m.media-amazon.com/images/I/61xtviA5U4L.jpg",
+      },
+      {
+        id: 14,
+        name: "Sunscreen",
+        description: "Protects skin from UV rays.",
+        price: 31,
+        image: "https://i.ytimg.com/vi/Twgc0ORBdDQ/maxresdefault.jpg",
+      },
+      {
+        id: 15,
+        name: "Face Wash",
+        description: "Removes dirt and impurities.",
+        price: 32,
+        image:
+          "https://www.skincenterofsouthmiami.com/wp-content/uploads/2018/06/Skin-Center-of-South-Miami-Facials-and-Skin-Care.jpg",
+      },
+    ],
+  },
+
+  Electronics: {
+    TVs: [
+      {
+        id: 1,
+        name: "Sony Bravia Next Gen Tv",
+        description: "Great Dolby Vision and HDR",
+        price: 100,
+        image:
+          "https://m.media-amazon.com/images/I/8159EvuNJaL._AC_UF1000,1000_QL80_.jpg",
+      },
+      {
+        id: 2,
+        name: "LG Nanocell",
+        description: "Best 4K TV",
+        price: 140,
+        image:
+          "https://www.lg.com/content/dam/channel/wcms/in/images/tvs/55qned88t6a-atr-eail-in-c/gallery/55QNED88T6A-DZ-03.jpg/_jcr_content/renditions/thum-1600x1062.jpeg",
+      },
+      {
+        id: 3,
+        name: "Haier TV",
+        description: "Great value With great features",
+        price: 200,
+        image:
+          "https://cdn.mos.cms.futurecdn.net/LMav3AW8YLsTQg5Ucz7U85-1200-80.jpg",
+      },
+      {
+        id: 4,
+        name: "REDMI Tv",
+        description: "Smart TV with great features",
+        price: 160,
+        image:
+          "https://vdaadmin.venusdigitalarcade.in/media/catalog/product/cache/a4aa45628d61667009e8bfd73fcc061b/1/7/17_14_58.jpg",
+      },
+      {
+        id: 5,
+        name: "LG QNED",
+        description: "Smart TV with Bezel-Free Design",
+        price: 150,
+        image:
+          "https://5.imimg.com/data5/SELLER/Default/2024/12/475493328/WU/UC/OZ/46183170/55-inch-sony-led-tv.jpeg",
+      },
+      {
+        id: 6,
+        name: "Aiwa OLED",
+        description: "1 Billion Color Combination",
+        price: 170,
+        image:
+          "https://static.toiimg.com/thumb/msid-99244997,imgsize-657260,width-400,resizemode-4/99244997.jpg",
+      },
+      {
+        id: 7,
+        name: "MI Tv",
+        description: "Segment Biggest Screen",
+        price: 180,
+        image: "https://cdn.mos.cms.futurecdn.net/XMgVXWexgLztHWXmktXgPJ.jpg",
+      },
+      {
+        id: 8,
+        name: "Realme Techlife",
+        description: "Android TV with great features",
+        price: 130,
+        image:
+          "https://i.gadgets360cdn.com/products/televisions/large/1548153588_832_lg_55-inch-led-full-hd-tv-55la9700.jpg",
+      },
+      {
+        id: 9,
+        name: "Xiaomi TV",
+        description: "LED smart TV with Google Connectivity",
+        price: 109,
+        image:
+          "https://i.rtings.com/assets/products/bcKbP8uc/sony-x85k/design-medium.jpg?format=auto",
+      },
+      {
+        id: 10,
+        name: "Motorola Invision",
+        description: "4k crystal Vision",
+        price: 110,
+        image:
+          "https://rukminim2.flixcart.com/image/850/1000/xif0q/television/p/n/y/-original-imagxyxzyvweg64x.jpeg?q=90&crop=false",
+      },
+      {
+        id: 11,
+        name: "Sony Bravia",
+        description: "With Dolby sound System",
+        price: 290,
+        image:
+          "https://cdn.mos.cms.futurecdn.net/w7xUMcWX7BMUMzayo4SzYE-1200-80.jpg",
+      },
+      {
+        id: 12,
+        name: "Acer TV",
+        description: "Smart WebOs TV",
+        price: 300,
+        image:
+          "https://static.langimg.com/thumb/110895065/navbharat-times-110895065.jpg?width=540&resizemode=3",
+      },
+      {
+        id: 13,
+        name: "LG TV",
+        description: "OLED Screen with 4K Resolution",
+        price: 219,
+        image:
+          "https://www.hindustantimes.com/ht-img/img/2024/10/04/550x309/Best_4K_TV_1728035464483_1728035465095.jpeg",
+      },
+      {
+        id: 14,
+        name: "Samsung TV",
+        description: "OLED Screen with 8K Resolution",
+        price: 199,
+        image: "https://m.media-amazon.com/images/I/51dPiXWFboL._SL500_.jpg",
+      },
+      {
+        id: 15,
+        name: "Sony Premium",
+        description: "4k Google TV With REGZA Power Audio",
+        price: 189,
+        image:
+          "https://www.digitaltrends.com/wp-content/uploads/2024/07/Sony-Bravia-9-Review-26.jpg?p=1",
+      },
+    ],
+    Refrigerator: [
+      {
+        id: 1,
+        name: "LG",
+        description: "Comes with Inbuilt Stabliser",
+        price: 100,
+        image:
+          "https://c.ndtvimg.com/2020-08/hq3r6of8_refrigerator_625x300_19_August_20.jpg",
+      },
+      {
+        id: 2,
+        name: "Samsung",
+        description: "Best In all Condition",
+        price: 140,
+        image:
+          "https://hips.hearstapps.com/hmg-prod/images/best-fridges-673bac80a584c.png?crop=0.502xw:1.00xh;0.250xw,0&resize=1200:*",
+      },
+      {
+        id: 3,
+        name: "Haier",
+        description: "Top Selling Refrigarator",
+        price: 200,
+        image:
+          "https://media.istockphoto.com/id/842160124/photo/refrigerator-with-fruits-and-vegetables.jpg?s=612x612&w=0&k=20&c=j0W4TPOevBpp3mS6_X2FHV1uWVl3fcfdGAt2X3l8XzE=",
+      },
+      {
+        id: 4,
+        name: "Whirpool",
+        description: "Nice Looking and Compact design",
+        price: 160,
+        image:
+          "https://static.toiimg.com/thumb/msid-80010563,width-1070,height-580,imgsize-229684,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      },
+      {
+        id: 5,
+        name: "Panasonic",
+        description: "Segment Most Affordable",
+        price: 150,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZ6IH_8eyHigEi2UFtcqNfs12Dc83Uci5AQ&s",
+      },
+      {
+        id: 6,
+        name: "Samsung 653l",
+        description: "Side by Side door Refrigarator",
+        price: 170,
+        image:
+          "https://www.lg.com/content/dam/channel/wcms/in/magazine/wish-to-get-the-best-refrigerator-for-your-home-look-out-for-these-four-features/blog-01v1.jpg",
+      },
+      {
+        id: 7,
+        name: "LG 655l",
+        description: "401l Frost Free Double Door",
+        price: 180,
+        image:
+          "https://www.whirlpool.com/is/image/content/dam/business-unit/whirlpoolv2/en-us/marketing-content/site-assets/page-content/oc-articles/types-of-refrigerators/types-of-refrigerators_Mobile_2.jpg?fmt=png-alpha&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0&scl=1&constrain=fit,1",
+      },
+      {
+        id: 8,
+        name: "Haier wifi",
+        description: "Frost Free And Convertible",
+        price: 130,
+        image:
+          "https://kitchenaid-h.assetsadobe.com/is/image/content/dam/global/whirlpool/refrigeration/freestanding-refrigerator/images/hero-WRB322DMHV.tif?&fmt=png-alpha&resMode=sharp2&wid=850&hei=850",
+      },
+      {
+        id: 9,
+        name: "Llyod",
+        description: "Comes With 180l capacity",
+        price: 109,
+        image:
+          "https://images.livemint.com/img/2024/08/02/600x338/refrigerator_1722596788297_1722596805972.png",
+      },
+      {
+        id: 10,
+        name: "Toshiba",
+        description: "Frost Free Double Door",
+        price: 110,
+        image:
+          "https://www.whirlpool.com/is/image/content/dam/business-unit/whirlpoolv2/en-us/marketing-content/site-assets/page-content/oc-articles/types-of-refrigerators/types-of-refrigerators_Thumbnail.jpg?wid=1200&fmt=webp",
+      },
+      {
+        id: 11,
+        name: "Voltas",
+        description: "Direct cooling System ",
+        price: 290,
+        image:
+          "https://img.etimg.com/thumb/width-420,height-315,imgsize-116140,resizemode-75,msid-110999283/top-trending-products/news/12-best-selling-refrigerators-in-india-june-2024/refrigerator.jpg",
+      },
+      {
+        id: 12,
+        name: "IFB",
+        description: "5 Star Double Door",
+        price: 300,
+        image:
+          "https://www.hindustantimes.com/ht-img/img/2023/09/18/550x309/hgjngh_1695038166488_1695038178583.jpg",
+      },
+      {
+        id: 13,
+        name: "BOSCH",
+        description: "Convertible in Nature ",
+        price: 219,
+        image:
+          "https://www.lg.com/content/dam/channel/wcms/in/magazine/frost-free-fridge-freezer/frost-free-fridge-freezer-02.jpg",
+      },
+      {
+        id: 14,
+        name: "Hisense",
+        description: "Comes With Dual Freezer",
+        price: 199,
+        image:
+          "https://www.hindustantimes.com/ht-img/img/2023/12/04/1600x900/fridge_1701672459244_1701672459623.jpg",
+      },
+      {
+        id: 15,
+        name: "MarQ",
+        description: "Great Cooling In Segment ",
+        price: 189,
+        image:
+          "https://i2.wp.com/techau.com.au/wp-content/uploads/2019/03/Fridge-black.jpg?fit=893%2C606&ssl=1",
+      },
+    ],
+    WashingMachine: [
+      {
+        id: 1,
+        name: "LG",
+        description:
+          "Consider the types of wash cycles available, such as fast spin cycles",
+        price: 100,
+        image:
+          "https://static.toiimg.com/thumb/msid-109640969,imgsize-42852,width-400,resizemode-4/109640969.jpg",
+      },
+      {
+        id: 2,
+        name: "Samsung",
+        description: "adjustable temperatures, and steam and sanitize cycles",
+        price: 140,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE3J1GA2kQuYBSRb5uURLMF_kapCfkXhOYzg&s",
+      },
+      {
+        id: 3,
+        name: "Whirpool",
+        description:
+          "Front load washing machines are more energy efficient than older models, using less water and electricity",
+        price: 200,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv6he1SVEdkTza_HAizfJYZDPSeVVKct5hGQ&s",
+      },
+      {
+        id: 4,
+        name: "IFB",
+        description: " Consider the material of the drum ",
+        price: 160,
+        image:
+          "https://media3.bsh-group.com/Product_Shots/5120x/19753969_WGG04409GB_STP_def.webp",
+      },
+      {
+        id: 5,
+        name: "Godrej",
+        description:
+          "Washing clothes is as easy as shoving all clothes inside the washing machine",
+        price: 150,
+        image:
+          "https://img.etimg.com/thumb/width-1200,height-900,imgsize-43118,resizemode-75,msid-116993427/top-trending-products/major-appliances/washing-machine/best-godrej-washing-machine-in-india-for-fresh-clean-laundry.jpg",
+      },
+      {
+        id: 6,
+        name: "BOSCH",
+        description:
+          "Washing clothes is as easy as shoving all clothes inside the washing machine",
+        price: 170,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4MgLjT0gAwH7xZJvZMSEDrqTMtKZ9cO77pA&s",
+      },
+      {
+        id: 7,
+        name: "Toshiba",
+        description:
+          "Washing clothes is as easy as shoving all clothes inside the washing machine",
+        price: 180,
+        image:
+          "https://asset20.ckassets.com/blog/wp-content/uploads/sites/5/2024/01/Washing-Machine-1024x512.jpg",
+      },
+      {
+        id: 8,
+        name: "Haier",
+        description:
+          "Front load washing machines are more energy efficient than older models, using less water and electricity",
+        price: 130,
+        image:
+          "https://www.livemint.com/lm-img/img/2024/08/16/1600x900/washing_machine_1723800674554_1723800688433.png",
+      },
+      {
+        id: 9,
+        name: "ElectroLux",
+        description: " Consider the material of the drum ",
+        price: 109,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSA_UdXpfHVor4MqGceSl3_Io1byyHc0qUpw&s",
+      },
+      {
+        id: 10,
+        name: "Croma",
+        description:
+          "Washing clothes is as easy as shoving all clothes inside the washing machine",
+        price: 110,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa0Ne2CZmDEoWtZDJLEm5e7dl2F_77OUaBcg&s",
+      },
+      {
+        id: 11,
+        name: "Llyod",
+        description:
+          "Washing clothes is as easy as shoving all clothes inside the washing machine",
+        price: 290,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlq4196rlEdwQ96S7jeFAupiIoMpfaO_Fu3A&s",
+      },
+      {
+        id: 12,
+        name: "Kelvinator",
+        description: " Consider the material of the drum ",
+        price: 300,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG-qiimF1W41KvKH2KnA7S777PYYOzphP4Yw&s",
+      },
+      {
+        id: 13,
+        name: "ONIDA",
+        description:
+          "Front load washing machines are more energy efficient than older models, using less water and electricity",
+        price: 219,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdP5kSt0quw-o9EgjMGIiHrzi6fipWC8b2Sw&s",
+      },
+      {
+        id: 14,
+        name: "MicroMax",
+        description:
+          "Washing clothes is as easy as shoving all clothes inside the washing machine",
+        price: 199,
+        image:
+          "https://5.imimg.com/data5/ECOM/Default/2024/8/447170480/OE/AJ/TR/5593817/in-ww6000d-ww12dg6b24astl-542991331-500x500.jpg",
+      },
+      {
+        id: 15,
+        name: "MarQ",
+        description:
+          "Washing clothes is as easy as shoving all clothes inside the washing machine",
+        price: 189,
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4fKytj0TBBLwc4TE25nZ-vMsnqM11dd93xA&s",
+      },
+    ],
+  },
 };
-
-
-
-
 
 app.get("/api", (req, res) => {
   res.json(data);
@@ -3132,7 +3074,6 @@ app.get("/api/:category", (req, res) => {
 
   res.json(categoryData);
 });
-
 
 // ✅ Route to get specific item by ID from any category
 app.get("/api/:category/:id", (req, res) => {
@@ -3151,22 +3092,27 @@ app.get("/api/:category/:id", (req, res) => {
   res.json(item);
 });
 
+app.get("/api/:category/:brand/:id", (req, res) => {
+  const { category, brand, id } = req.params;
 
-
-app.get("/api/mobiles/:brand/:id", (req, res) => {
-  const { brand, id } = req.params;
-  const brandData = data.Mobiles[brand]; // Access the brand data
-
-  if (!brandData) {
-    return res.status(404).json({ message: "Brand not found" });
+  if (!data[category]) {
+    return res.status(404).json({ message: `Category '${category}' not found` });
   }
 
-  const item = brandData.find((entry) => entry.id == id); // Find by ID
+  const brandData = data[category][brand]; // Access brand data
+
+  if (!brandData) {
+    return res.status(404).json({ message: `Brand '${brand}' not found in category '${category}'` });
+  }
+
+  const item = brandData.find((entry) => entry.id == id); // Find item by ID
+
   if (!item) {
-    return res.status(404).json({ message: "Item not found" });
+    return res.status(404).json({ message: `Item with ID '${id}' not found in '${brand}' under '${category}'` });
   }
 
   res.json(item);
 });
+
 
 app.listen(3500);
