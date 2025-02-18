@@ -5,6 +5,11 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 3500;
 
+// ✅ Enable CORS for all origins
+app.use(cors({ origin: "*" })); 
+
+app.use(bodyParser.json());
+
 const data = {
   restaurants: [
     {
