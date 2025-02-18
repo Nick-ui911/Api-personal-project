@@ -1,11 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const app = express();
 
-// Middleware
-app.use(cors());
-app.use(bodyParser.json());
+const app = express();
+const PORT = process.env.PORT || 3500;
 
 const data = {
   restaurants: [
@@ -3090,4 +3088,7 @@ app.get("/api/:category/:brand/:id", (req, res) => {
 });
 
 
-app.listen(3500);
+// ✅ Start the server on Render-compatible port
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
